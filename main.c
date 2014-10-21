@@ -1,4 +1,5 @@
+#include <stdio.h>
 int main(){
-	printf("Super");
+	printf("Good night\n");
 	return 0;
 }
