@@ -1,4 +1,4 @@
 int main(){
-	printf("Super");
+printf("");
 	return 0;
 }
