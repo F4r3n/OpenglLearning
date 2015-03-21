@@ -1,4 +1,4 @@
-# Install script for directory: /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0
+# Install script for directory: /home/guillaume/Documents/tp/opengl/opengl/tp0
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/home/guillaume/Documents/tp/opengl/opengl/tp0/build/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/home/guillaume/Documents/tp/opengl/opengl/tp0/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

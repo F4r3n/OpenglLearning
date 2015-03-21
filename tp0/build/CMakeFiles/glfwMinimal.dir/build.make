@@ -34,11 +34,14 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0
+CMAKE_SOURCE_DIR = /home/guillaume/Documents/tp/opengl/opengl/tp0
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build
+CMAKE_BINARY_DIR = /home/guillaume/Documents/tp/opengl/opengl/tp0/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/glfwMinimal.dir/depend.make
@@ -51,17 +54,17 @@ include CMakeFiles/glfwMinimal.dir/flags.make
 
 CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.o: CMakeFiles/glfwMinimal.dir/flags.make
 CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.o: ../glfwMinimal.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.o -c /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/glfwMinimal.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.o -c /home/guillaume/Documents/tp/opengl/opengl/tp0/glfwMinimal.cpp
 
 CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/glfwMinimal.cpp > CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/guillaume/Documents/tp/opengl/opengl/tp0/glfwMinimal.cpp > CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.i
 
 CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/glfwMinimal.cpp -o CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/guillaume/Documents/tp/opengl/opengl/tp0/glfwMinimal.cpp -o CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.s
 
 CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.o.requires:
 .PHONY : CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.o.requires
@@ -72,14 +75,39 @@ CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.o.provides: CMakeFiles/glfwMinimal.di
 
 CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.o.provides.build: CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.o
 
+CMakeFiles/glfwMinimal.dir/camera.cpp.o: CMakeFiles/glfwMinimal.dir/flags.make
+CMakeFiles/glfwMinimal.dir/camera.cpp.o: ../camera.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/glfwMinimal.dir/camera.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/glfwMinimal.dir/camera.cpp.o -c /home/guillaume/Documents/tp/opengl/opengl/tp0/camera.cpp
+
+CMakeFiles/glfwMinimal.dir/camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/glfwMinimal.dir/camera.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/guillaume/Documents/tp/opengl/opengl/tp0/camera.cpp > CMakeFiles/glfwMinimal.dir/camera.cpp.i
+
+CMakeFiles/glfwMinimal.dir/camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/glfwMinimal.dir/camera.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/guillaume/Documents/tp/opengl/opengl/tp0/camera.cpp -o CMakeFiles/glfwMinimal.dir/camera.cpp.s
+
+CMakeFiles/glfwMinimal.dir/camera.cpp.o.requires:
+.PHONY : CMakeFiles/glfwMinimal.dir/camera.cpp.o.requires
+
+CMakeFiles/glfwMinimal.dir/camera.cpp.o.provides: CMakeFiles/glfwMinimal.dir/camera.cpp.o.requires
+	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/camera.cpp.o.provides.build
+.PHONY : CMakeFiles/glfwMinimal.dir/camera.cpp.o.provides
+
+CMakeFiles/glfwMinimal.dir/camera.cpp.o.provides.build: CMakeFiles/glfwMinimal.dir/camera.cpp.o
+
 # Object files for target glfwMinimal
 glfwMinimal_OBJECTS = \
-"CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.o"
+"CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.o" \
+"CMakeFiles/glfwMinimal.dir/camera.cpp.o"
 
 # External object files for target glfwMinimal
 glfwMinimal_EXTERNAL_OBJECTS =
 
 glfwMinimal: CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.o
+glfwMinimal: CMakeFiles/glfwMinimal.dir/camera.cpp.o
 glfwMinimal: CMakeFiles/glfwMinimal.dir/build.make
 glfwMinimal: /usr/lib/x86_64-linux-gnu/libGLU.so
 glfwMinimal: /usr/lib/x86_64-linux-gnu/libGL.so
@@ -96,6 +124,7 @@ CMakeFiles/glfwMinimal.dir/build: glfwMinimal
 .PHONY : CMakeFiles/glfwMinimal.dir/build
 
 CMakeFiles/glfwMinimal.dir/requires: CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.o.requires
+CMakeFiles/glfwMinimal.dir/requires: CMakeFiles/glfwMinimal.dir/camera.cpp.o.requires
 .PHONY : CMakeFiles/glfwMinimal.dir/requires
 
 CMakeFiles/glfwMinimal.dir/clean:
@@ -103,6 +132,6 @@ CMakeFiles/glfwMinimal.dir/clean:
 .PHONY : CMakeFiles/glfwMinimal.dir/clean
 
 CMakeFiles/glfwMinimal.dir/depend:
-	cd /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0 /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0 /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/glfwMinimal.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/guillaume/Documents/tp/opengl/opengl/tp0/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/guillaume/Documents/tp/opengl/opengl/tp0 /home/guillaume/Documents/tp/opengl/opengl/tp0 /home/guillaume/Documents/tp/opengl/opengl/tp0/build /home/guillaume/Documents/tp/opengl/opengl/tp0/build /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/glfwMinimal.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/glfwMinimal.dir/depend
 

@@ -1,5 +1,6 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.o"
+  "CMakeFiles/glfwMinimal.dir/camera.cpp.o"
   "glfwMinimal.pdb"
   "glfwMinimal"
 )
