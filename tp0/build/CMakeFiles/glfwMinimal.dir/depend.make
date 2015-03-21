@@ -3,11 +3,40 @@
 
 CMakeFiles/glfwMinimal.dir/camera.cpp.o: ../camera.cpp
 CMakeFiles/glfwMinimal.dir/camera.cpp.o: ../camera.hpp
+CMakeFiles/glfwMinimal.dir/camera.cpp.o: ../gameObject.hpp
 CMakeFiles/glfwMinimal.dir/camera.cpp.o: ../glfwMinimal.h
+CMakeFiles/glfwMinimal.dir/camera.cpp.o: ../stage.hpp
 CMakeFiles/glfwMinimal.dir/camera.cpp.o: /usr/local/include/GLFW/glfw3.h
 
+CMakeFiles/glfwMinimal.dir/game.cpp.o: ../camera.hpp
+CMakeFiles/glfwMinimal.dir/game.cpp.o: ../game.cpp
+CMakeFiles/glfwMinimal.dir/game.cpp.o: ../game.hpp
+CMakeFiles/glfwMinimal.dir/game.cpp.o: ../gameObject.hpp
+CMakeFiles/glfwMinimal.dir/game.cpp.o: ../gameTorus.hpp
+CMakeFiles/glfwMinimal.dir/game.cpp.o: ../glfwMinimal.h
+CMakeFiles/glfwMinimal.dir/game.cpp.o: ../stage.hpp
+CMakeFiles/glfwMinimal.dir/game.cpp.o: /usr/local/include/GLFW/glfw3.h
+
+CMakeFiles/glfwMinimal.dir/gameObject.cpp.o: ../gameObject.cpp
+CMakeFiles/glfwMinimal.dir/gameObject.cpp.o: ../gameObject.hpp
+CMakeFiles/glfwMinimal.dir/gameObject.cpp.o: /usr/local/include/GLFW/glfw3.h
+
+CMakeFiles/glfwMinimal.dir/gameTorus.cpp.o: ../gameObject.hpp
+CMakeFiles/glfwMinimal.dir/gameTorus.cpp.o: ../gameTorus.cpp
+CMakeFiles/glfwMinimal.dir/gameTorus.cpp.o: ../gameTorus.hpp
+CMakeFiles/glfwMinimal.dir/gameTorus.cpp.o: /usr/local/include/GLFW/glfw3.h
+
 CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.o: ../camera.hpp
+CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.o: ../game.hpp
+CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.o: ../gameObject.hpp
+CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.o: ../gameTorus.hpp
 CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.o: ../glfwMinimal.cpp
 CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.o: ../glfwMinimal.h
+CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.o: ../stage.hpp
 CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.o: /usr/local/include/GLFW/glfw3.h
+
+CMakeFiles/glfwMinimal.dir/stage.cpp.o: ../gameObject.hpp
+CMakeFiles/glfwMinimal.dir/stage.cpp.o: ../stage.cpp
+CMakeFiles/glfwMinimal.dir/stage.cpp.o: ../stage.hpp
+CMakeFiles/glfwMinimal.dir/stage.cpp.o: /usr/local/include/GLFW/glfw3.h
 

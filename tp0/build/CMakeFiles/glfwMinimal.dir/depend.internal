@@ -4,10 +4,39 @@
 CMakeFiles/glfwMinimal.dir/camera.cpp.o
  /home/guillaume/Documents/tp/opengl/opengl/tp0/camera.cpp
  /home/guillaume/Documents/tp/opengl/opengl/tp0/camera.hpp
+ /home/guillaume/Documents/tp/opengl/opengl/tp0/gameObject.hpp
  /home/guillaume/Documents/tp/opengl/opengl/tp0/glfwMinimal.h
+ /home/guillaume/Documents/tp/opengl/opengl/tp0/stage.hpp
+ /usr/local/include/GLFW/glfw3.h
+CMakeFiles/glfwMinimal.dir/game.cpp.o
+ /home/guillaume/Documents/tp/opengl/opengl/tp0/camera.hpp
+ /home/guillaume/Documents/tp/opengl/opengl/tp0/game.cpp
+ /home/guillaume/Documents/tp/opengl/opengl/tp0/game.hpp
+ /home/guillaume/Documents/tp/opengl/opengl/tp0/gameObject.hpp
+ /home/guillaume/Documents/tp/opengl/opengl/tp0/gameTorus.hpp
+ /home/guillaume/Documents/tp/opengl/opengl/tp0/glfwMinimal.h
+ /home/guillaume/Documents/tp/opengl/opengl/tp0/stage.hpp
+ /usr/local/include/GLFW/glfw3.h
+CMakeFiles/glfwMinimal.dir/gameObject.cpp.o
+ /home/guillaume/Documents/tp/opengl/opengl/tp0/gameObject.cpp
+ /home/guillaume/Documents/tp/opengl/opengl/tp0/gameObject.hpp
+ /usr/local/include/GLFW/glfw3.h
+CMakeFiles/glfwMinimal.dir/gameTorus.cpp.o
+ /home/guillaume/Documents/tp/opengl/opengl/tp0/gameObject.hpp
+ /home/guillaume/Documents/tp/opengl/opengl/tp0/gameTorus.cpp
+ /home/guillaume/Documents/tp/opengl/opengl/tp0/gameTorus.hpp
  /usr/local/include/GLFW/glfw3.h
 CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.o
  /home/guillaume/Documents/tp/opengl/opengl/tp0/camera.hpp
+ /home/guillaume/Documents/tp/opengl/opengl/tp0/game.hpp
+ /home/guillaume/Documents/tp/opengl/opengl/tp0/gameObject.hpp
+ /home/guillaume/Documents/tp/opengl/opengl/tp0/gameTorus.hpp
  /home/guillaume/Documents/tp/opengl/opengl/tp0/glfwMinimal.cpp
  /home/guillaume/Documents/tp/opengl/opengl/tp0/glfwMinimal.h
+ /home/guillaume/Documents/tp/opengl/opengl/tp0/stage.hpp
+ /usr/local/include/GLFW/glfw3.h
+CMakeFiles/glfwMinimal.dir/stage.cpp.o
+ /home/guillaume/Documents/tp/opengl/opengl/tp0/gameObject.hpp
+ /home/guillaume/Documents/tp/opengl/opengl/tp0/stage.cpp
+ /home/guillaume/Documents/tp/opengl/opengl/tp0/stage.hpp
  /usr/local/include/GLFW/glfw3.h

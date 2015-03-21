@@ -1,0 +1,4 @@
+/home/guillaume/Documents/tp/opengl/opengl/2/GLLabs/Minimal/CMakeFiles/minimal.dir
+/home/guillaume/Documents/tp/opengl/opengl/2/GLLabs/Shading/CMakeFiles/shading.dir
+/home/guillaume/Documents/tp/opengl/opengl/2/GLLabs/Textures/CMakeFiles/textures.dir
+/home/guillaume/Documents/tp/opengl/opengl/2/GLLabs/CMakeFiles/utils.dir

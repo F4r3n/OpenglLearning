@@ -5,7 +5,11 @@ SET(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/guillaume/Documents/tp/opengl/opengl/tp0/camera.cpp" "/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/glfwMinimal.dir/camera.cpp.o"
+  "/home/guillaume/Documents/tp/opengl/opengl/tp0/game.cpp" "/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/glfwMinimal.dir/game.cpp.o"
+  "/home/guillaume/Documents/tp/opengl/opengl/tp0/gameObject.cpp" "/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/glfwMinimal.dir/gameObject.cpp.o"
+  "/home/guillaume/Documents/tp/opengl/opengl/tp0/gameTorus.cpp" "/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/glfwMinimal.dir/gameTorus.cpp.o"
   "/home/guillaume/Documents/tp/opengl/opengl/tp0/glfwMinimal.cpp" "/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.o"
+  "/home/guillaume/Documents/tp/opengl/opengl/tp0/stage.cpp" "/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/glfwMinimal.dir/stage.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

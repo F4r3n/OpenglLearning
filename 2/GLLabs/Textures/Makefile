@@ -38,19 +38,22 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs/Textures
+CMAKE_SOURCE_DIR = /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs/Textures
+CMAKE_BINARY_DIR = /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
-	/usr/bin/cmake -i .
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,14 +72,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs/Textures/CMakeFiles /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs/Textures/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs/Textures/CMakeFiles 0
+	cd /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs && $(CMAKE_COMMAND) -E cmake_progress_start /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs/CMakeFiles /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs/Textures/CMakeFiles/progress.marks
+	cd /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs && $(MAKE) -f CMakeFiles/Makefile2 Textures/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs && $(MAKE) -f CMakeFiles/Makefile2 Textures/clean
 .PHONY : clean
 
 # The main clean target
@@ -85,30 +88,31 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs && $(MAKE) -f CMakeFiles/Makefile2 Textures/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs && $(MAKE) -f CMakeFiles/Makefile2 Textures/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named textures
+# Convenience name for target.
+Textures/CMakeFiles/textures.dir/rule:
+	cd /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs && $(MAKE) -f CMakeFiles/Makefile2 Textures/CMakeFiles/textures.dir/rule
+.PHONY : Textures/CMakeFiles/textures.dir/rule
 
-# Build rule for target.
-textures: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 textures
+# Convenience name for target.
+textures: Textures/CMakeFiles/textures.dir/rule
 .PHONY : textures
 
 # fast build rule for target.
 textures/fast:
-	$(MAKE) -f CMakeFiles/textures.dir/build.make CMakeFiles/textures.dir/build
+	cd /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs && $(MAKE) -f Textures/CMakeFiles/textures.dir/build.make Textures/CMakeFiles/textures.dir/build
 .PHONY : textures/fast
 
 textures.o: textures.cpp.o
@@ -116,7 +120,7 @@ textures.o: textures.cpp.o
 
 # target to build an object file
 textures.cpp.o:
-	$(MAKE) -f CMakeFiles/textures.dir/build.make CMakeFiles/textures.dir/textures.cpp.o
+	cd /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs && $(MAKE) -f Textures/CMakeFiles/textures.dir/build.make Textures/CMakeFiles/textures.dir/textures.cpp.o
 .PHONY : textures.cpp.o
 
 textures.i: textures.cpp.i
@@ -124,7 +128,7 @@ textures.i: textures.cpp.i
 
 # target to preprocess a source file
 textures.cpp.i:
-	$(MAKE) -f CMakeFiles/textures.dir/build.make CMakeFiles/textures.dir/textures.cpp.i
+	cd /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs && $(MAKE) -f Textures/CMakeFiles/textures.dir/build.make Textures/CMakeFiles/textures.dir/textures.cpp.i
 .PHONY : textures.cpp.i
 
 textures.s: textures.cpp.s
@@ -132,7 +136,7 @@ textures.s: textures.cpp.s
 
 # target to generate assembly for a file
 textures.cpp.s:
-	$(MAKE) -f CMakeFiles/textures.dir/build.make CMakeFiles/textures.dir/textures.cpp.s
+	cd /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs && $(MAKE) -f Textures/CMakeFiles/textures.dir/build.make Textures/CMakeFiles/textures.dir/textures.cpp.s
 .PHONY : textures.cpp.s
 
 # Help Target
@@ -158,6 +162,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

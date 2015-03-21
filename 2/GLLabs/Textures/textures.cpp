@@ -14,13 +14,15 @@
 #include <glm/gtc/type_ptr.hpp>
 #include <glm/gtc/constants.hpp>
 //loading stuffs
-#include "utils/utils.h"
-#include "utils/shaders.h"
-#include "utils/textures.h"
-#include "utils/objloader.h"
+#include "../utils/utils.h"
+#include "../utils/shaders.h"
+#include "../utils/textures.h"
+#include "../utils/objloader.h"
 #include "../include/lightGlAPI.hpp"
 #include "textures.hpp"/*}}}*/
 
+    ensi::gl::GLSLMaterial mat;
+	GLuint Timer;
 
 //-------------------- MAIN /*{{{*/
 int main(void)/*{{{*/
@@ -34,13 +36,16 @@ void mainLoop(void)/*{{{*/
 {
     ensi::gl::Scene& scene = ensi::gl::Scene::getInstance();
     ensi::gl::Controls& controls=scene.controls;
+	Timer = glGetUniformLocation(mat.program.progid,"time");
     // this just loops as long as the program runs
     while(!glfwWindowShouldClose(controls.window))
     {
+
         /* Calculate time elapsed, and the amount by which stuff rotates*//*{{{*/
         double current_time = glfwGetTime();
         controls.setTime(current_time);
         controls.updateView();
+		glUniform1f(Timer,current_time);
         /*}}}*/
 
         /* Additional key handling (when repeat key is needed)*//*{{{*/
@@ -78,11 +83,11 @@ void init(void)/*{{{*/
     if (!glfwInit())
         shutDown(1);
     // Create OpenGL 3.x Core Profile Context                                                   
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 #ifdef __APPLE__
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 1);
 #else
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 4);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 #endif
     
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
@@ -137,11 +142,10 @@ int make_resources(void)/*{{{*/
     // Create the scene/*{{{*/
     glm::mat4 mw;
     /* Dice material {{{*/
-    ensi::gl::GLSLMaterial mat;
     // NB: tga files con be obtained with the imagemagick conversion tool as follows
     //     convert checkerboard.jpg -type TrueColor ../checkerboard.tga
     mat.uniformSamplers["colormap"]=loadTGATexture("dice.tga");
-    mat.uniforms["diffuse"]=glm::vec3(1,0,0);
+    mat.uniforms["diffuse"]=glm::vec3(1,1,1);
     ensi::gl::Program prog("texture.v.glsl", "texture.f.glsl");
     mat.program=prog;
     scene.materials["dice"]=mat;

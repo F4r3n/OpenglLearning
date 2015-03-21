@@ -98,16 +98,116 @@ CMakeFiles/glfwMinimal.dir/camera.cpp.o.provides: CMakeFiles/glfwMinimal.dir/cam
 
 CMakeFiles/glfwMinimal.dir/camera.cpp.o.provides.build: CMakeFiles/glfwMinimal.dir/camera.cpp.o
 
+CMakeFiles/glfwMinimal.dir/gameObject.cpp.o: CMakeFiles/glfwMinimal.dir/flags.make
+CMakeFiles/glfwMinimal.dir/gameObject.cpp.o: ../gameObject.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/glfwMinimal.dir/gameObject.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/glfwMinimal.dir/gameObject.cpp.o -c /home/guillaume/Documents/tp/opengl/opengl/tp0/gameObject.cpp
+
+CMakeFiles/glfwMinimal.dir/gameObject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/glfwMinimal.dir/gameObject.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/guillaume/Documents/tp/opengl/opengl/tp0/gameObject.cpp > CMakeFiles/glfwMinimal.dir/gameObject.cpp.i
+
+CMakeFiles/glfwMinimal.dir/gameObject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/glfwMinimal.dir/gameObject.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/guillaume/Documents/tp/opengl/opengl/tp0/gameObject.cpp -o CMakeFiles/glfwMinimal.dir/gameObject.cpp.s
+
+CMakeFiles/glfwMinimal.dir/gameObject.cpp.o.requires:
+.PHONY : CMakeFiles/glfwMinimal.dir/gameObject.cpp.o.requires
+
+CMakeFiles/glfwMinimal.dir/gameObject.cpp.o.provides: CMakeFiles/glfwMinimal.dir/gameObject.cpp.o.requires
+	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/gameObject.cpp.o.provides.build
+.PHONY : CMakeFiles/glfwMinimal.dir/gameObject.cpp.o.provides
+
+CMakeFiles/glfwMinimal.dir/gameObject.cpp.o.provides.build: CMakeFiles/glfwMinimal.dir/gameObject.cpp.o
+
+CMakeFiles/glfwMinimal.dir/gameTorus.cpp.o: CMakeFiles/glfwMinimal.dir/flags.make
+CMakeFiles/glfwMinimal.dir/gameTorus.cpp.o: ../gameTorus.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/glfwMinimal.dir/gameTorus.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/glfwMinimal.dir/gameTorus.cpp.o -c /home/guillaume/Documents/tp/opengl/opengl/tp0/gameTorus.cpp
+
+CMakeFiles/glfwMinimal.dir/gameTorus.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/glfwMinimal.dir/gameTorus.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/guillaume/Documents/tp/opengl/opengl/tp0/gameTorus.cpp > CMakeFiles/glfwMinimal.dir/gameTorus.cpp.i
+
+CMakeFiles/glfwMinimal.dir/gameTorus.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/glfwMinimal.dir/gameTorus.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/guillaume/Documents/tp/opengl/opengl/tp0/gameTorus.cpp -o CMakeFiles/glfwMinimal.dir/gameTorus.cpp.s
+
+CMakeFiles/glfwMinimal.dir/gameTorus.cpp.o.requires:
+.PHONY : CMakeFiles/glfwMinimal.dir/gameTorus.cpp.o.requires
+
+CMakeFiles/glfwMinimal.dir/gameTorus.cpp.o.provides: CMakeFiles/glfwMinimal.dir/gameTorus.cpp.o.requires
+	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/gameTorus.cpp.o.provides.build
+.PHONY : CMakeFiles/glfwMinimal.dir/gameTorus.cpp.o.provides
+
+CMakeFiles/glfwMinimal.dir/gameTorus.cpp.o.provides.build: CMakeFiles/glfwMinimal.dir/gameTorus.cpp.o
+
+CMakeFiles/glfwMinimal.dir/stage.cpp.o: CMakeFiles/glfwMinimal.dir/flags.make
+CMakeFiles/glfwMinimal.dir/stage.cpp.o: ../stage.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/glfwMinimal.dir/stage.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/glfwMinimal.dir/stage.cpp.o -c /home/guillaume/Documents/tp/opengl/opengl/tp0/stage.cpp
+
+CMakeFiles/glfwMinimal.dir/stage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/glfwMinimal.dir/stage.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/guillaume/Documents/tp/opengl/opengl/tp0/stage.cpp > CMakeFiles/glfwMinimal.dir/stage.cpp.i
+
+CMakeFiles/glfwMinimal.dir/stage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/glfwMinimal.dir/stage.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/guillaume/Documents/tp/opengl/opengl/tp0/stage.cpp -o CMakeFiles/glfwMinimal.dir/stage.cpp.s
+
+CMakeFiles/glfwMinimal.dir/stage.cpp.o.requires:
+.PHONY : CMakeFiles/glfwMinimal.dir/stage.cpp.o.requires
+
+CMakeFiles/glfwMinimal.dir/stage.cpp.o.provides: CMakeFiles/glfwMinimal.dir/stage.cpp.o.requires
+	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/stage.cpp.o.provides.build
+.PHONY : CMakeFiles/glfwMinimal.dir/stage.cpp.o.provides
+
+CMakeFiles/glfwMinimal.dir/stage.cpp.o.provides.build: CMakeFiles/glfwMinimal.dir/stage.cpp.o
+
+CMakeFiles/glfwMinimal.dir/game.cpp.o: CMakeFiles/glfwMinimal.dir/flags.make
+CMakeFiles/glfwMinimal.dir/game.cpp.o: ../game.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/glfwMinimal.dir/game.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/glfwMinimal.dir/game.cpp.o -c /home/guillaume/Documents/tp/opengl/opengl/tp0/game.cpp
+
+CMakeFiles/glfwMinimal.dir/game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/glfwMinimal.dir/game.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/guillaume/Documents/tp/opengl/opengl/tp0/game.cpp > CMakeFiles/glfwMinimal.dir/game.cpp.i
+
+CMakeFiles/glfwMinimal.dir/game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/glfwMinimal.dir/game.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/guillaume/Documents/tp/opengl/opengl/tp0/game.cpp -o CMakeFiles/glfwMinimal.dir/game.cpp.s
+
+CMakeFiles/glfwMinimal.dir/game.cpp.o.requires:
+.PHONY : CMakeFiles/glfwMinimal.dir/game.cpp.o.requires
+
+CMakeFiles/glfwMinimal.dir/game.cpp.o.provides: CMakeFiles/glfwMinimal.dir/game.cpp.o.requires
+	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/game.cpp.o.provides.build
+.PHONY : CMakeFiles/glfwMinimal.dir/game.cpp.o.provides
+
+CMakeFiles/glfwMinimal.dir/game.cpp.o.provides.build: CMakeFiles/glfwMinimal.dir/game.cpp.o
+
 # Object files for target glfwMinimal
 glfwMinimal_OBJECTS = \
 "CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.o" \
-"CMakeFiles/glfwMinimal.dir/camera.cpp.o"
+"CMakeFiles/glfwMinimal.dir/camera.cpp.o" \
+"CMakeFiles/glfwMinimal.dir/gameObject.cpp.o" \
+"CMakeFiles/glfwMinimal.dir/gameTorus.cpp.o" \
+"CMakeFiles/glfwMinimal.dir/stage.cpp.o" \
+"CMakeFiles/glfwMinimal.dir/game.cpp.o"
 
 # External object files for target glfwMinimal
 glfwMinimal_EXTERNAL_OBJECTS =
 
 glfwMinimal: CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.o
 glfwMinimal: CMakeFiles/glfwMinimal.dir/camera.cpp.o
+glfwMinimal: CMakeFiles/glfwMinimal.dir/gameObject.cpp.o
+glfwMinimal: CMakeFiles/glfwMinimal.dir/gameTorus.cpp.o
+glfwMinimal: CMakeFiles/glfwMinimal.dir/stage.cpp.o
+glfwMinimal: CMakeFiles/glfwMinimal.dir/game.cpp.o
 glfwMinimal: CMakeFiles/glfwMinimal.dir/build.make
 glfwMinimal: /usr/lib/x86_64-linux-gnu/libGLU.so
 glfwMinimal: /usr/lib/x86_64-linux-gnu/libGL.so
@@ -125,6 +225,10 @@ CMakeFiles/glfwMinimal.dir/build: glfwMinimal
 
 CMakeFiles/glfwMinimal.dir/requires: CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.o.requires
 CMakeFiles/glfwMinimal.dir/requires: CMakeFiles/glfwMinimal.dir/camera.cpp.o.requires
+CMakeFiles/glfwMinimal.dir/requires: CMakeFiles/glfwMinimal.dir/gameObject.cpp.o.requires
+CMakeFiles/glfwMinimal.dir/requires: CMakeFiles/glfwMinimal.dir/gameTorus.cpp.o.requires
+CMakeFiles/glfwMinimal.dir/requires: CMakeFiles/glfwMinimal.dir/stage.cpp.o.requires
+CMakeFiles/glfwMinimal.dir/requires: CMakeFiles/glfwMinimal.dir/game.cpp.o.requires
 .PHONY : CMakeFiles/glfwMinimal.dir/requires
 
 CMakeFiles/glfwMinimal.dir/clean:

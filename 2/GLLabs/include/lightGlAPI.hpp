@@ -40,13 +40,13 @@
 #include <assimp/postprocess.h>
 
 // my own utils
-#include "utils/utils.h"
-#include "utils/shaders.h"
-#include "utils/vao.h"
-#include "utils/textures.h"
-#include "utils/objloader.h"
-#include "utils/vboindexer.h"
-#include "utils/tangentspace.h"
+#include "../utils/utils.h"
+#include "../utils/shaders.h"
+#include "../utils/vao.h"
+#include "../utils/textures.h"
+#include "../utils/objloader.h"
+#include "../utils/vboindexer.h"
+#include "../utils/tangentspace.h"
 /*}}}*/
 
 /* forward declarations {{{ */

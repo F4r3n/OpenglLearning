@@ -138,6 +138,78 @@ camera.cpp.s:
 	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/camera.cpp.s
 .PHONY : camera.cpp.s
 
+game.o: game.cpp.o
+.PHONY : game.o
+
+# target to build an object file
+game.cpp.o:
+	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/game.cpp.o
+.PHONY : game.cpp.o
+
+game.i: game.cpp.i
+.PHONY : game.i
+
+# target to preprocess a source file
+game.cpp.i:
+	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/game.cpp.i
+.PHONY : game.cpp.i
+
+game.s: game.cpp.s
+.PHONY : game.s
+
+# target to generate assembly for a file
+game.cpp.s:
+	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/game.cpp.s
+.PHONY : game.cpp.s
+
+gameObject.o: gameObject.cpp.o
+.PHONY : gameObject.o
+
+# target to build an object file
+gameObject.cpp.o:
+	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/gameObject.cpp.o
+.PHONY : gameObject.cpp.o
+
+gameObject.i: gameObject.cpp.i
+.PHONY : gameObject.i
+
+# target to preprocess a source file
+gameObject.cpp.i:
+	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/gameObject.cpp.i
+.PHONY : gameObject.cpp.i
+
+gameObject.s: gameObject.cpp.s
+.PHONY : gameObject.s
+
+# target to generate assembly for a file
+gameObject.cpp.s:
+	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/gameObject.cpp.s
+.PHONY : gameObject.cpp.s
+
+gameTorus.o: gameTorus.cpp.o
+.PHONY : gameTorus.o
+
+# target to build an object file
+gameTorus.cpp.o:
+	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/gameTorus.cpp.o
+.PHONY : gameTorus.cpp.o
+
+gameTorus.i: gameTorus.cpp.i
+.PHONY : gameTorus.i
+
+# target to preprocess a source file
+gameTorus.cpp.i:
+	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/gameTorus.cpp.i
+.PHONY : gameTorus.cpp.i
+
+gameTorus.s: gameTorus.cpp.s
+.PHONY : gameTorus.s
+
+# target to generate assembly for a file
+gameTorus.cpp.s:
+	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/gameTorus.cpp.s
+.PHONY : gameTorus.cpp.s
+
 glfwMinimal.o: glfwMinimal.cpp.o
 .PHONY : glfwMinimal.o
 
@@ -162,6 +234,30 @@ glfwMinimal.cpp.s:
 	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.s
 .PHONY : glfwMinimal.cpp.s
 
+stage.o: stage.cpp.o
+.PHONY : stage.o
+
+# target to build an object file
+stage.cpp.o:
+	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/stage.cpp.o
+.PHONY : stage.cpp.o
+
+stage.i: stage.cpp.i
+.PHONY : stage.i
+
+# target to preprocess a source file
+stage.cpp.i:
+	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/stage.cpp.i
+.PHONY : stage.cpp.i
+
+stage.s: stage.cpp.s
+.PHONY : stage.s
+
+# target to generate assembly for a file
+stage.cpp.s:
+	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/stage.cpp.s
+.PHONY : stage.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -174,9 +270,21 @@ help:
 	@echo "... camera.o"
 	@echo "... camera.i"
 	@echo "... camera.s"
+	@echo "... game.o"
+	@echo "... game.i"
+	@echo "... game.s"
+	@echo "... gameObject.o"
+	@echo "... gameObject.i"
+	@echo "... gameObject.s"
+	@echo "... gameTorus.o"
+	@echo "... gameTorus.i"
+	@echo "... gameTorus.s"
 	@echo "... glfwMinimal.o"
 	@echo "... glfwMinimal.i"
 	@echo "... glfwMinimal.s"
+	@echo "... stage.o"
+	@echo "... stage.i"
+	@echo "... stage.s"
 .PHONY : help
 
 
