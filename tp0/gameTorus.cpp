@@ -1,6 +1,7 @@
 #include "gameTorus.hpp"
 
-GameTorus::GameTorus(std::string &name, GLuint &programm,double R, double r,glm::vec3 color):GameObject(name,programm) {
+GameTorus::GameTorus(std::string &name, GLuint &programm,double R, double r,glm::vec3 color,glm::vec3 translation):
+	GameObject(name,programm,translation) {
 	this->R = R;
 	this->r = r;
 	this->colorValue = color;
@@ -11,7 +12,11 @@ GameTorus::~GameTorus() {
 }
 
 void GameTorus::draw() {
+
+    glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
 	GameObject::draw();
+
 }
 
 glm::vec3 GameTorus::torusPoint(double theta, double phi, double R, double r)/*{{{*/

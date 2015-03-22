@@ -14,13 +14,15 @@
 class GameObject {
 
 		public:
-			GameObject(std::string &name, GLuint &programm);
+			GameObject(std::string &name, GLuint &programm, glm::vec3 translate);
 			~GameObject();
 			virtual void draw() = 0;
 			virtual void makeObject()=0;
-			void translate(double x,double y, double z);
+			glm::mat4 moveObject();
+		glm::vec3 translation;
 
 		protected:
+
 		GLuint vao;
 		GLuint programm;
 		std::string _name;

@@ -3,7 +3,7 @@
 #include "gameObject.hpp"
 class GameTorus : public GameObject {
 	public:
-		GameTorus(std::string &name,GLuint &programm, double R, double r, glm::vec3 color);
+		GameTorus(std::string &name,GLuint &programm, double R, double r, glm::vec3 color, glm::vec3 translate);
 		~GameTorus();
 		void makeObject();
 		void draw();

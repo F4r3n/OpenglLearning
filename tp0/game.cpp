@@ -54,7 +54,10 @@ void Game::renderFrame() {
 	glEnable(GL_DEPTH_TEST);
 	glUseProgram(programm);
 
-	stage.draw();
+	glm::mat4 ProjectionMatrix = camera.getProjection();
+	glm::mat4 ViewMatrix = camera.getView();
+
+	stage.draw(MatrixID,ViewMatrix,ProjectionMatrix);
 
 
 	//--------- Clean state again
@@ -66,12 +69,10 @@ void Game::renderFrame() {
 }
 
 void Game::run() {
-
 	std::string name = "tore";
-	GameTorus *torus = new GameTorus(name,programm,0.5,0.25,glm::vec3(1,0,0));
+	GameTorus *torus = new GameTorus(name,programm,0.5,0.25,glm::vec3(1,0,0),glm::vec3(0,0.5,0));
 
-	GameTorus *torus2 = new GameTorus(name,programm,1,0.25,glm::vec3(0,1,0));
-	torus->translate(10,10,10);
+	GameTorus *torus2 = new GameTorus(name,programm,1,0.25,glm::vec3(0,1,0),glm::vec3(1,0,0));
 	stage.addObject(torus);
 	stage.addObject(torus2);
 	stage.makeObject();
@@ -79,7 +80,6 @@ void Game::run() {
 	float time = 0;
 	glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
 
-	glfwSetCursorPos(window, 1024/2, 768/2);
 	while(1)
 	{
 
@@ -91,11 +91,7 @@ void Game::run() {
 
 		camera.update(time,window);
 		glUseProgram(programm);
-		glm::mat4 ProjectionMatrix = camera.getProjection();
-		glm::mat4 ViewMatrix = camera.getView();
-		glm::mat4 ModelMatrix = glm::mat4(1.0);
-		glm::mat4 MVP = ProjectionMatrix * ViewMatrix * ModelMatrix;
-		glUniformMatrix4fv(MatrixID, 1, GL_FALSE, glm::value_ptr(MVP));
+
 		glfwPollEvents();
 		renderFrame();
 	}
