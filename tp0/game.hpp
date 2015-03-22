@@ -10,7 +10,7 @@
 #include <vector>
 #include "camera.hpp"
 #include "gameTorus.hpp"
-
+#include "gameSphere.hpp"
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
@@ -38,6 +38,7 @@ class Game {
 		Stage stage;
 		GLuint MatrixID;
 		const int width = 1024, height = 800;
+		GLuint type;
 
 };
 #endif 

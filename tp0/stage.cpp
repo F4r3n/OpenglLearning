@@ -11,7 +11,13 @@ Stage::~Stage() {
 void Stage::draw() {
 	for(auto o : objects) {
 		o->draw();
+	}
+}
 
+void Stage::setType(GLuint type) {
+
+	for(auto o : objects) {
+		o->setType(type);
 	}
 }
 

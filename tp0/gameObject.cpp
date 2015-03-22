@@ -7,11 +7,16 @@ GameObject::GameObject(std::string &name,GLuint &programm,glm::vec3 translate) {
 	pos = new std::vector<float>();
 	index = new std::vector<unsigned int>();
 	this->translation = translate;
+	type = GL_TRIANGLES;
 
 }
 
 void GameObject::makeObject() {
 
+}
+
+void GameObject::setType(GLuint type) {
+	this->type = type;
 }
 
 glm::mat4 GameObject::moveObject() {
@@ -24,7 +29,7 @@ glm::mat4 GameObject::moveObject() {
 void GameObject::draw() {
 
 	glBindVertexArray(vao);
-	glDrawElements(GL_TRIANGLES, index->size(), GL_UNSIGNED_INT, 0);
+	glDrawElements(type, index->size(), GL_UNSIGNED_INT, 0);
 	glBindVertexArray(0);
 
 }

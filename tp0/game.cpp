@@ -8,6 +8,7 @@ void Game::init() {
 
 	initGLFW();
 	initGLEW();
+	type = GL_TRIANGLES;
 	createShaders();
 
 	make_resources();
@@ -71,19 +72,29 @@ void Game::renderFrame() {
 void Game::run() {
 	std::string name = "tore";
 	GameTorus *torus = new GameTorus(name,programm,0.5,0.25,glm::vec3(1,0,0),glm::vec3(0,0.5,0));
+	GameTorus *torus2 = new GameTorus(name,programm,1,0.25,glm::vec3(0,1,0),glm::vec3(1,0,1));
+	GameSphere *s = new GameSphere(name,programm,0.25,glm::vec3(1,1,0),glm::vec3(2,0,0));
 
-	GameTorus *torus2 = new GameTorus(name,programm,1,0.25,glm::vec3(0,1,0),glm::vec3(1,0,0));
 	stage.addObject(torus);
 	stage.addObject(torus2);
+	stage.addObject(s);
 	stage.makeObject();
 	float dt = 1/60;
 	float time = 0;
 	glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
+	bool pressL=false;
 
 	while(1)
 	{
 
 		if (glfwGetKey(window,GLFW_KEY_ESCAPE) == GLFW_PRESS) break;
+		if(glfwGetKey(window, GLFW_KEY_L) == GLFW_PRESS && pressL == false){
+			if(type == GL_TRIANGLES) type = GL_LINES;
+			else type = GL_TRIANGLES;
+			stage.setType(type);
+			pressL = true;
+		}
+		if(glfwGetKey(window, GLFW_KEY_L) == GLFW_RELEASE) pressL = false;
 		while(time<dt)
 			time+=0.01;
 		time=0;

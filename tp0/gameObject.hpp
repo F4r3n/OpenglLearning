@@ -21,6 +21,7 @@ class GameObject {
 			glm::mat4 moveObject();
 		glm::vec3 translation;
 
+void setType(GLuint type);
 		protected:
 
 		GLuint vao;
@@ -29,6 +30,7 @@ class GameObject {
 		std::vector<float> *color;
 		std::vector<float> *pos;
 		std::vector<unsigned int> *index;
+		GLuint type;
 
 
 };
