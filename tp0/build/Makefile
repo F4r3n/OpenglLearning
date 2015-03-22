@@ -186,6 +186,30 @@ gameObject.cpp.s:
 	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/gameObject.cpp.s
 .PHONY : gameObject.cpp.s
 
+gameSphere.o: gameSphere.cpp.o
+.PHONY : gameSphere.o
+
+# target to build an object file
+gameSphere.cpp.o:
+	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/gameSphere.cpp.o
+.PHONY : gameSphere.cpp.o
+
+gameSphere.i: gameSphere.cpp.i
+.PHONY : gameSphere.i
+
+# target to preprocess a source file
+gameSphere.cpp.i:
+	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/gameSphere.cpp.i
+.PHONY : gameSphere.cpp.i
+
+gameSphere.s: gameSphere.cpp.s
+.PHONY : gameSphere.s
+
+# target to generate assembly for a file
+gameSphere.cpp.s:
+	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/gameSphere.cpp.s
+.PHONY : gameSphere.cpp.s
+
 gameTorus.o: gameTorus.cpp.o
 .PHONY : gameTorus.o
 
@@ -276,6 +300,9 @@ help:
 	@echo "... gameObject.o"
 	@echo "... gameObject.i"
 	@echo "... gameObject.s"
+	@echo "... gameSphere.o"
+	@echo "... gameSphere.i"
+	@echo "... gameSphere.s"
 	@echo "... gameTorus.o"
 	@echo "... gameTorus.i"
 	@echo "... gameTorus.s"

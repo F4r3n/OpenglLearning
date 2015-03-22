@@ -5,6 +5,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/glfwMinimal.dir/gameTorus.cpp.o"
   "CMakeFiles/glfwMinimal.dir/stage.cpp.o"
   "CMakeFiles/glfwMinimal.dir/game.cpp.o"
+  "CMakeFiles/glfwMinimal.dir/gameSphere.cpp.o"
   "glfwMinimal.pdb"
   "glfwMinimal"
 )

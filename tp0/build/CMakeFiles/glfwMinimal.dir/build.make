@@ -190,6 +190,29 @@ CMakeFiles/glfwMinimal.dir/game.cpp.o.provides: CMakeFiles/glfwMinimal.dir/game.
 
 CMakeFiles/glfwMinimal.dir/game.cpp.o.provides.build: CMakeFiles/glfwMinimal.dir/game.cpp.o
 
+CMakeFiles/glfwMinimal.dir/gameSphere.cpp.o: CMakeFiles/glfwMinimal.dir/flags.make
+CMakeFiles/glfwMinimal.dir/gameSphere.cpp.o: ../gameSphere.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/glfwMinimal.dir/gameSphere.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/glfwMinimal.dir/gameSphere.cpp.o -c /home/guillaume/Documents/tp/opengl/opengl/tp0/gameSphere.cpp
+
+CMakeFiles/glfwMinimal.dir/gameSphere.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/glfwMinimal.dir/gameSphere.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/guillaume/Documents/tp/opengl/opengl/tp0/gameSphere.cpp > CMakeFiles/glfwMinimal.dir/gameSphere.cpp.i
+
+CMakeFiles/glfwMinimal.dir/gameSphere.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/glfwMinimal.dir/gameSphere.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/guillaume/Documents/tp/opengl/opengl/tp0/gameSphere.cpp -o CMakeFiles/glfwMinimal.dir/gameSphere.cpp.s
+
+CMakeFiles/glfwMinimal.dir/gameSphere.cpp.o.requires:
+.PHONY : CMakeFiles/glfwMinimal.dir/gameSphere.cpp.o.requires
+
+CMakeFiles/glfwMinimal.dir/gameSphere.cpp.o.provides: CMakeFiles/glfwMinimal.dir/gameSphere.cpp.o.requires
+	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/gameSphere.cpp.o.provides.build
+.PHONY : CMakeFiles/glfwMinimal.dir/gameSphere.cpp.o.provides
+
+CMakeFiles/glfwMinimal.dir/gameSphere.cpp.o.provides.build: CMakeFiles/glfwMinimal.dir/gameSphere.cpp.o
+
 # Object files for target glfwMinimal
 glfwMinimal_OBJECTS = \
 "CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.o" \
@@ -197,7 +220,8 @@ glfwMinimal_OBJECTS = \
 "CMakeFiles/glfwMinimal.dir/gameObject.cpp.o" \
 "CMakeFiles/glfwMinimal.dir/gameTorus.cpp.o" \
 "CMakeFiles/glfwMinimal.dir/stage.cpp.o" \
-"CMakeFiles/glfwMinimal.dir/game.cpp.o"
+"CMakeFiles/glfwMinimal.dir/game.cpp.o" \
+"CMakeFiles/glfwMinimal.dir/gameSphere.cpp.o"
 
 # External object files for target glfwMinimal
 glfwMinimal_EXTERNAL_OBJECTS =
@@ -208,6 +232,7 @@ glfwMinimal: CMakeFiles/glfwMinimal.dir/gameObject.cpp.o
 glfwMinimal: CMakeFiles/glfwMinimal.dir/gameTorus.cpp.o
 glfwMinimal: CMakeFiles/glfwMinimal.dir/stage.cpp.o
 glfwMinimal: CMakeFiles/glfwMinimal.dir/game.cpp.o
+glfwMinimal: CMakeFiles/glfwMinimal.dir/gameSphere.cpp.o
 glfwMinimal: CMakeFiles/glfwMinimal.dir/build.make
 glfwMinimal: /usr/lib/x86_64-linux-gnu/libGLU.so
 glfwMinimal: /usr/lib/x86_64-linux-gnu/libGL.so
@@ -229,6 +254,7 @@ CMakeFiles/glfwMinimal.dir/requires: CMakeFiles/glfwMinimal.dir/gameObject.cpp.o
 CMakeFiles/glfwMinimal.dir/requires: CMakeFiles/glfwMinimal.dir/gameTorus.cpp.o.requires
 CMakeFiles/glfwMinimal.dir/requires: CMakeFiles/glfwMinimal.dir/stage.cpp.o.requires
 CMakeFiles/glfwMinimal.dir/requires: CMakeFiles/glfwMinimal.dir/game.cpp.o.requires
+CMakeFiles/glfwMinimal.dir/requires: CMakeFiles/glfwMinimal.dir/gameSphere.cpp.o.requires
 .PHONY : CMakeFiles/glfwMinimal.dir/requires
 
 CMakeFiles/glfwMinimal.dir/clean:
