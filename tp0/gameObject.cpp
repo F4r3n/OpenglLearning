@@ -12,13 +12,16 @@ GameObject::GameObject(std::string &name,GLuint &programm,glm::vec3 translate) {
 
 }
 
+void GameObject::setUnit(int unit) {
+	this->unit = unit;
+}
+
 void GameObject::makeObject() {
 
 	GLuint positionBuffer;
 	GLuint indexBuffer;
 	GLuint normalBuffer;
 	GLuint textureBuffer;
-	std::cout << uvs->size() << std::endl;
 
 	glGenBuffers(1, &positionBuffer);
 	glBindBuffer(GL_ARRAY_BUFFER, positionBuffer);
@@ -36,6 +39,7 @@ void GameObject::makeObject() {
 	glBufferData(GL_ELEMENT_ARRAY_BUFFER, index->size()* sizeof(unsigned int), index->data(), GL_STATIC_DRAW);
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 
+	
 	glGenBuffers(1, &textureBuffer);
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, textureBuffer);
 	glBufferData(GL_ELEMENT_ARRAY_BUFFER, uvs->size()* sizeof(float), uvs->data(), GL_STATIC_DRAW);
@@ -54,13 +58,13 @@ void GameObject::makeObject() {
 	glEnableVertexAttribArray(normalIndex);
 	glVertexAttribPointer(normalIndex, 3, GL_FLOAT, GL_FALSE, 0, 0);
 
-/*	glBindBuffer(GL_ARRAY_BUFFER, textureBuffer);
+	glBindBuffer(GL_ARRAY_BUFFER, textureBuffer);
 	GLint textureIndex = glGetAttribLocation(programm, "vertexUv");
 	glEnableVertexAttribArray(textureIndex);
-	glVertexAttribPointer(textureIndex, 2, GL_FLOAT, GL_FALSE, 0, 0);*/
+	glVertexAttribPointer(textureIndex, 2, GL_FLOAT, GL_FALSE, 0, 0);
 	//--------- Encapsulation of an IBO 
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBuffer);
-	//--------- Deactivation (clean OpenGl state!!)
+	//--------- Desactivation (clean OpenGl state!!)
 	glBindVertexArray(0);
 //	glActiveTexture(GL_TEXTURE0);
 //	glBindTexture(GL_TEXTURE_2D, texture);

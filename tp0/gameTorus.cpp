@@ -5,7 +5,8 @@ GameTorus::GameTorus(std::string &name, GLuint &programm,double R, double r,glm:
 	this->R = R;
 	this->r = r;
 	this->colorValue = color;
-	this->texture = t;
+	if(t=="") texture = -1;
+	this->textureName = t;
 }
 
 GameTorus::~GameTorus() {
@@ -13,9 +14,15 @@ GameTorus::~GameTorus() {
 }
 
 void GameTorus::draw() {
+	GLfloat fLargest;
+	glActiveTexture(GL_TEXTURE0);
 
-    glMatrixMode(GL_MODELVIEW);
-	glLoadIdentity();
+	glBindTexture(GL_TEXTURE_2D, texture);
+glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+	// Set our "myTextureSampler" sampler to user Texture Unit 0
+glGetFloatv(GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT, &fLargest);
+			glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAX_ANISOTROPY_EXT, fLargest);
+	glUniform1i(textureID, 0);
 	GameObject::draw();
 
 }
@@ -61,8 +68,8 @@ void GameTorus::makeObject() {
 			index->push_back(((indexT+1)%nbBins)*nbBins+indexP);
 			index->push_back(indexT*nbBins+(indexP+1)%nbBins);
 			index->push_back(((indexT+1)%nbBins)*nbBins+(indexP+1)%nbBins);
-			uvs->push_back(indexP%2);
-			uvs->push_back(indexT%2);
+			uvs->push_back((indexT%2)/2.f);
+			uvs->push_back((indexP%2)/2.f);
 
 			indexP++;
 		}
@@ -70,7 +77,7 @@ void GameTorus::makeObject() {
 	}
 	textureID =glGetUniformLocation(programm, "colormap"); 
 
-	texture = loadTGATexture(texture);
+	texture = loadTGATexture(textureName);
 	GameObject::makeObject();
 
 }

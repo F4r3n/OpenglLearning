@@ -4,7 +4,7 @@
 #include "gameObject.hpp"
 class GameSphere : public GameObject {
 	public:
-		GameSphere(std::string &name,GLuint &programm, double R,  glm::vec3 color, glm::vec3 translate);
+		GameSphere(std::string &name,GLuint &programm, double R,  glm::vec3 color, glm::vec3 translate,const std::string t="");
 		~GameSphere();
 		void makeObject();
 		void draw();
@@ -12,6 +12,7 @@ class GameSphere : public GameObject {
 
 	private:
 		glm::vec3 colorValue;
+		std::string textureName;
 		double R;
 
 };

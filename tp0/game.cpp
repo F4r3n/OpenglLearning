@@ -71,13 +71,14 @@ void Game::renderFrame() {
 
 void Game::run() {
 	std::string name = "tore";
-	GameTorus *torus = new GameTorus(name,programm,0.5,0.25,glm::vec3(1,0,0),glm::vec3(0,0.5,0),"checkerboard.tga");
-	//	GameTorus *torus2 = new GameTorus(name,programm,1,0.25,glm::vec3(0,1,0),glm::vec3(1,0,1),"checkerboard.tga");
-	//	GameSphere *s = new GameSphere(name,programm,0.25,glm::vec3(1,1,0),glm::vec3(2,0,0),"checkerboard.tga");
+	GameTorus *torus = new GameTorus(name,programm,0.5,0.25,glm::vec3(1,0,0),glm::vec3(0,2,-5),"checkerboard.tga");
+	GameTorus *torus2 = new GameTorus(name,programm,1,0.25,glm::vec3(0,1,0),glm::vec3(1,0,-5),"brick_colormap.tga");
+	GameSphere *s = new GameSphere(name,programm,0.25,glm::vec3(1,1,0),glm::vec3(2,0,0),"checkerboard.tga");
 
 	stage.addObject(torus);
-	//	stage.addObject(torus2);
-	//	stage.addObject(s);
+	stage.addObject(torus2);
+	stage.addObject(s);
+	for(int i=0;i<10;++i) stage.addObject(new GameSphere(name,programm,0.25,glm::vec3(1,1,0),glm::vec3(-5+i,0,0),"brick_colormap.tga"));
 	stage.makeObject();
 
 

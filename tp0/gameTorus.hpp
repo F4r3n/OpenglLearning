@@ -13,7 +13,7 @@ class GameTorus : public GameObject {
 		glm::vec3 colorValue;
 		double R;
 		double r;
-		std::string texture;
+		std::string textureName;
 
 };
 

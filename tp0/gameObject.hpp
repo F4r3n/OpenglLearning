@@ -22,9 +22,11 @@ class GameObject {
 		glm::mat4 moveObject();
 		glm::vec3 translation;
 		void setType(GLuint type);
+		void setUnit(int unit);
 
 	protected:
 
+		int unit=0;
 		GLuint vao;
 		GLuint programm;
 		std::string _name;

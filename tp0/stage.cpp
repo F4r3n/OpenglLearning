@@ -32,8 +32,12 @@ void Stage::draw(GLuint MatrixID,glm::mat4 view, glm::mat4 proj) {
 }
 
 void Stage::makeObject() {
-	for(auto o : objects)
+	int unit=0;
+	for(auto o : objects) {
 		o->makeObject();
+		o->setUnit(unit);
+		unit++;
+	}
 
 }
 

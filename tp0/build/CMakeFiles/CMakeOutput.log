@@ -531,3 +531,93 @@ Linking C executable cmTryCompileExec3184132085
 make[1]: quittant le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
 
 
+Determining if the function XOpenDisplay exists in the /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so passed with the following output:
+Change Dir: /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1328120231/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1328120231.dir/build.make CMakeFiles/cmTryCompileExec1328120231.dir/build
+make[1]: Entering directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1328120231.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTryCompileExec1328120231.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1328120231
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1328120231.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay    CMakeFiles/cmTryCompileExec1328120231.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1328120231 -rdynamic -lX11 -lXext 
+make[1]: Leaving directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1557068459/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1557068459.dir/build.make CMakeFiles/cmTryCompileExec1557068459.dir/build
+make[1]: Entering directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1557068459.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTryCompileExec1557068459.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1557068459
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1557068459.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTryCompileExec1557068459.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1557068459 -rdynamic 
+make[1]: Leaving directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1020812171/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1020812171.dir/build.make CMakeFiles/cmTryCompileExec1020812171.dir/build
+make[1]: Entering directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1020812171.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTryCompileExec1020812171.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1020812171
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1020812171.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTryCompileExec1020812171.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1020812171 -rdynamic 
+make[1]: Leaving directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3753727580/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3753727580.dir/build.make CMakeFiles/cmTryCompileExec3753727580.dir/build
+make[1]: Entering directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3753727580.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTryCompileExec3753727580.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3753727580
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3753727580.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove    CMakeFiles/cmTryCompileExec3753727580.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3753727580 -rdynamic 
+make[1]: Leaving directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4016029139/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4016029139.dir/build.make CMakeFiles/cmTryCompileExec4016029139.dir/build
+make[1]: Entering directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4016029139.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTryCompileExec4016029139.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec4016029139
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4016029139.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat    CMakeFiles/cmTryCompileExec4016029139.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4016029139 -rdynamic 
+make[1]: Leaving directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1362324906/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1362324906.dir/build.make CMakeFiles/cmTryCompileExec1362324906.dir/build
+make[1]: Entering directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1362324906.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTryCompileExec1362324906.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1362324906
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1362324906.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    CMakeFiles/cmTryCompileExec1362324906.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1362324906 -rdynamic -lICE 
+make[1]: Leaving directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
+
+
