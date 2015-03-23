@@ -1,4 +1,4 @@
-# Install script for directory: /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs/Shading
+# Install script for directory: /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs/Shading
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)

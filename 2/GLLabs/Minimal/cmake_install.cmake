@@ -1,4 +1,4 @@
-# Install script for directory: /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs/Minimal
+# Install script for directory: /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs/Minimal
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)

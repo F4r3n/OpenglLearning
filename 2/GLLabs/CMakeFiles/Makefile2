@@ -46,14 +46,11 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs
+CMAKE_SOURCE_DIR = /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs
+CMAKE_BINARY_DIR = /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs
 
 #=============================================================================
 # Target rules for target CMakeFiles/utils.dir
@@ -62,7 +59,7 @@ CMAKE_BINARY_DIR = /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs
 CMakeFiles/utils.dir/all:
 	$(MAKE) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/depend
 	$(MAKE) -f CMakeFiles/utils.dir/build.make CMakeFiles/utils.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs/CMakeFiles  4 5 6 7 8 9 10
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs/CMakeFiles  4 5 6 7 8 9 10
 	@echo "Built target utils"
 .PHONY : CMakeFiles/utils.dir/all
 
@@ -72,9 +69,9 @@ all: CMakeFiles/utils.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/utils.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/utils.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs/CMakeFiles 0
 .PHONY : CMakeFiles/utils.dir/rule
 
 # Convenience name for target.
@@ -112,7 +109,7 @@ Minimal/preinstall:
 Minimal/CMakeFiles/minimal.dir/all: CMakeFiles/utils.dir/all
 	$(MAKE) -f Minimal/CMakeFiles/minimal.dir/build.make Minimal/CMakeFiles/minimal.dir/depend
 	$(MAKE) -f Minimal/CMakeFiles/minimal.dir/build.make Minimal/CMakeFiles/minimal.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs/CMakeFiles  1
 	@echo "Built target minimal"
 .PHONY : Minimal/CMakeFiles/minimal.dir/all
 
@@ -122,9 +119,9 @@ all: Minimal/CMakeFiles/minimal.dir/all
 
 # Build rule for subdir invocation for target.
 Minimal/CMakeFiles/minimal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 Minimal/CMakeFiles/minimal.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs/CMakeFiles 0
 .PHONY : Minimal/CMakeFiles/minimal.dir/rule
 
 # Convenience name for target.
@@ -162,7 +159,7 @@ Textures/preinstall:
 Textures/CMakeFiles/textures.dir/all: CMakeFiles/utils.dir/all
 	$(MAKE) -f Textures/CMakeFiles/textures.dir/build.make Textures/CMakeFiles/textures.dir/depend
 	$(MAKE) -f Textures/CMakeFiles/textures.dir/build.make Textures/CMakeFiles/textures.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs/CMakeFiles  3
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs/CMakeFiles  3
 	@echo "Built target textures"
 .PHONY : Textures/CMakeFiles/textures.dir/all
 
@@ -172,9 +169,9 @@ all: Textures/CMakeFiles/textures.dir/all
 
 # Build rule for subdir invocation for target.
 Textures/CMakeFiles/textures.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 Textures/CMakeFiles/textures.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs/CMakeFiles 0
 .PHONY : Textures/CMakeFiles/textures.dir/rule
 
 # Convenience name for target.
@@ -212,7 +209,7 @@ Shading/preinstall:
 Shading/CMakeFiles/shading.dir/all: CMakeFiles/utils.dir/all
 	$(MAKE) -f Shading/CMakeFiles/shading.dir/build.make Shading/CMakeFiles/shading.dir/depend
 	$(MAKE) -f Shading/CMakeFiles/shading.dir/build.make Shading/CMakeFiles/shading.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs/CMakeFiles  2
 	@echo "Built target shading"
 .PHONY : Shading/CMakeFiles/shading.dir/all
 
@@ -222,9 +219,9 @@ all: Shading/CMakeFiles/shading.dir/all
 
 # Build rule for subdir invocation for target.
 Shading/CMakeFiles/shading.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 Shading/CMakeFiles/shading.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs/CMakeFiles 0
 .PHONY : Shading/CMakeFiles/shading.dir/rule
 
 # Convenience name for target.

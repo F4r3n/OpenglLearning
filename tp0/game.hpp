@@ -39,6 +39,7 @@ class Game {
 		GLuint MatrixID;
 		const int width = 1024, height = 800;
 		GLuint type;
+		GLuint diffuseID;
 
 };
 #endif 

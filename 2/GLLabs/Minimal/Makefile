@@ -38,22 +38,19 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs
+CMAKE_SOURCE_DIR = /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs
+CMAKE_BINARY_DIR = /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
+	/usr/bin/cmake -i .
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -72,14 +69,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs && $(CMAKE_COMMAND) -E cmake_progress_start /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs/CMakeFiles /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs/Minimal/CMakeFiles/progress.marks
-	cd /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs && $(MAKE) -f CMakeFiles/Makefile2 Minimal/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs/CMakeFiles 0
+	cd /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs && $(CMAKE_COMMAND) -E cmake_progress_start /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs/CMakeFiles /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs/Minimal/CMakeFiles/progress.marks
+	cd /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs && $(MAKE) -f CMakeFiles/Makefile2 Minimal/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs && $(MAKE) -f CMakeFiles/Makefile2 Minimal/clean
+	cd /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs && $(MAKE) -f CMakeFiles/Makefile2 Minimal/clean
 .PHONY : clean
 
 # The main clean target
@@ -88,22 +85,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs && $(MAKE) -f CMakeFiles/Makefile2 Minimal/preinstall
+	cd /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs && $(MAKE) -f CMakeFiles/Makefile2 Minimal/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs && $(MAKE) -f CMakeFiles/Makefile2 Minimal/preinstall
+	cd /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs && $(MAKE) -f CMakeFiles/Makefile2 Minimal/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Minimal/CMakeFiles/minimal.dir/rule:
-	cd /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs && $(MAKE) -f CMakeFiles/Makefile2 Minimal/CMakeFiles/minimal.dir/rule
+	cd /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs && $(MAKE) -f CMakeFiles/Makefile2 Minimal/CMakeFiles/minimal.dir/rule
 .PHONY : Minimal/CMakeFiles/minimal.dir/rule
 
 # Convenience name for target.
@@ -112,7 +109,7 @@ minimal: Minimal/CMakeFiles/minimal.dir/rule
 
 # fast build rule for target.
 minimal/fast:
-	cd /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs && $(MAKE) -f Minimal/CMakeFiles/minimal.dir/build.make Minimal/CMakeFiles/minimal.dir/build
+	cd /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs && $(MAKE) -f Minimal/CMakeFiles/minimal.dir/build.make Minimal/CMakeFiles/minimal.dir/build
 .PHONY : minimal/fast
 
 minimal.o: minimal.cpp.o
@@ -120,7 +117,7 @@ minimal.o: minimal.cpp.o
 
 # target to build an object file
 minimal.cpp.o:
-	cd /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs && $(MAKE) -f Minimal/CMakeFiles/minimal.dir/build.make Minimal/CMakeFiles/minimal.dir/minimal.cpp.o
+	cd /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs && $(MAKE) -f Minimal/CMakeFiles/minimal.dir/build.make Minimal/CMakeFiles/minimal.dir/minimal.cpp.o
 .PHONY : minimal.cpp.o
 
 minimal.i: minimal.cpp.i
@@ -128,7 +125,7 @@ minimal.i: minimal.cpp.i
 
 # target to preprocess a source file
 minimal.cpp.i:
-	cd /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs && $(MAKE) -f Minimal/CMakeFiles/minimal.dir/build.make Minimal/CMakeFiles/minimal.dir/minimal.cpp.i
+	cd /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs && $(MAKE) -f Minimal/CMakeFiles/minimal.dir/build.make Minimal/CMakeFiles/minimal.dir/minimal.cpp.i
 .PHONY : minimal.cpp.i
 
 minimal.s: minimal.cpp.s
@@ -136,7 +133,7 @@ minimal.s: minimal.cpp.s
 
 # target to generate assembly for a file
 minimal.cpp.s:
-	cd /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs && $(MAKE) -f Minimal/CMakeFiles/minimal.dir/build.make Minimal/CMakeFiles/minimal.dir/minimal.cpp.s
+	cd /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs && $(MAKE) -f Minimal/CMakeFiles/minimal.dir/build.make Minimal/CMakeFiles/minimal.dir/minimal.cpp.s
 .PHONY : minimal.cpp.s
 
 # Help Target
@@ -162,6 +159,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/guillaume/Documents/tp/opengl/opengl/2/GLLabs && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

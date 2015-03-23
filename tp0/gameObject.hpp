@@ -5,24 +5,25 @@
 #include <GL/glew.h>  // must be included before gl.h
 #include <GLFW/glfw3.h>
 #include <fstream>
+#include <iostream>
 #include <vector>
-
+#include "textures.h"
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <glm/gtc/constants.hpp>
 class GameObject {
 
-		public:
-			GameObject(std::string &name, GLuint &programm, glm::vec3 translate);
-			~GameObject();
-			virtual void draw() = 0;
-			virtual void makeObject()=0;
-			glm::mat4 moveObject();
+	public:
+		GameObject(std::string &name, GLuint &programm, glm::vec3 translate);
+		~GameObject();
+		virtual void draw() = 0;
+		virtual void makeObject()=0;
+		glm::mat4 moveObject();
 		glm::vec3 translation;
+		void setType(GLuint type);
 
-void setType(GLuint type);
-		protected:
+	protected:
 
 		GLuint vao;
 		GLuint programm;
@@ -30,7 +31,12 @@ void setType(GLuint type);
 		std::vector<float> *color;
 		std::vector<float> *pos;
 		std::vector<unsigned int> *index;
+		std::vector<float> *uvs;
 		GLuint type;
+		GLuint texture;
+
+		GLuint textureID;
+		unsigned int vertexCount=0;
 
 
 };

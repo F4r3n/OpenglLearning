@@ -71,14 +71,16 @@ void Game::renderFrame() {
 
 void Game::run() {
 	std::string name = "tore";
-	GameTorus *torus = new GameTorus(name,programm,0.5,0.25,glm::vec3(1,0,0),glm::vec3(0,0.5,0));
-	GameTorus *torus2 = new GameTorus(name,programm,1,0.25,glm::vec3(0,1,0),glm::vec3(1,0,1));
-	GameSphere *s = new GameSphere(name,programm,0.25,glm::vec3(1,1,0),glm::vec3(2,0,0));
+	GameTorus *torus = new GameTorus(name,programm,0.5,0.25,glm::vec3(1,0,0),glm::vec3(0,0.5,0),"checkerboard.tga");
+	//	GameTorus *torus2 = new GameTorus(name,programm,1,0.25,glm::vec3(0,1,0),glm::vec3(1,0,1),"checkerboard.tga");
+	//	GameSphere *s = new GameSphere(name,programm,0.25,glm::vec3(1,1,0),glm::vec3(2,0,0),"checkerboard.tga");
 
 	stage.addObject(torus);
-	stage.addObject(torus2);
-	stage.addObject(s);
+	//	stage.addObject(torus2);
+	//	stage.addObject(s);
 	stage.makeObject();
+
+
 	float dt = 1/60;
 	float time = 0;
 	glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);

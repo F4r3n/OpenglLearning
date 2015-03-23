@@ -3,7 +3,7 @@
 #include "gameObject.hpp"
 class GameTorus : public GameObject {
 	public:
-		GameTorus(std::string &name,GLuint &programm, double R, double r, glm::vec3 color, glm::vec3 translate);
+		GameTorus(std::string &name,GLuint &programm, double R, double r, glm::vec3 color, glm::vec3 translate,const std::string textureName="");
 		~GameTorus();
 		void makeObject();
 		void draw();
@@ -13,6 +13,7 @@ class GameTorus : public GameObject {
 		glm::vec3 colorValue;
 		double R;
 		double r;
+		std::string texture;
 
 };
 
