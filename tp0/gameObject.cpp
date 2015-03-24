@@ -20,7 +20,7 @@ void GameObject::makeObject() {
 
 	GLuint positionBuffer;
 	GLuint indexBuffer;
-	GLuint normalBuffer;
+	GLuint colorBuffer;
 	GLuint textureBuffer;
 
 	glGenBuffers(1, &positionBuffer);
@@ -28,22 +28,23 @@ void GameObject::makeObject() {
 	glBufferData(GL_ARRAY_BUFFER, vertexCount* 3 * sizeof(float), pos->data(), GL_STATIC_DRAW);
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
 
-	glGenBuffers(1, &normalBuffer);
-	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, normalBuffer);
-	glBufferData(GL_ELEMENT_ARRAY_BUFFER, vertexCount*3* sizeof(float), color->data(), GL_STATIC_DRAW);
-	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
+	glGenBuffers(1, &colorBuffer);
+	glBindBuffer(GL_ARRAY_BUFFER, colorBuffer);
+	glBufferData(GL_ARRAY_BUFFER, vertexCount*3* sizeof(float), color->data(), GL_STATIC_DRAW);
+	glBindBuffer(GL_ARRAY_BUFFER, 0);
 
 
 	glGenBuffers(1, &indexBuffer);
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBuffer);
 	glBufferData(GL_ELEMENT_ARRAY_BUFFER, index->size()* sizeof(unsigned int), index->data(), GL_STATIC_DRAW);
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
-
+	std::cout << index->size() << std::endl;
+	std::cout << vertexCount << std::endl;
 	
 	glGenBuffers(1, &textureBuffer);
-	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, textureBuffer);
-	glBufferData(GL_ELEMENT_ARRAY_BUFFER, uvs->size()* sizeof(float), uvs->data(), GL_STATIC_DRAW);
-	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
+	glBindBuffer(GL_ARRAY_BUFFER, textureBuffer);
+	glBufferData(GL_ARRAY_BUFFER, uvs->size()* sizeof(float), uvs->data(), GL_STATIC_DRAW);
+	glBindBuffer(GL_ARRAY_BUFFER, 0);
 
 	glGenVertexArrays(1, &vao);
 	glBindVertexArray(vao);
@@ -53,7 +54,7 @@ void GameObject::makeObject() {
 	glEnableVertexAttribArray(positionIndex);
 	glVertexAttribPointer(positionIndex, 3, GL_FLOAT, GL_FALSE, 0, 0);
 
-	glBindBuffer(GL_ARRAY_BUFFER, normalBuffer);
+	glBindBuffer(GL_ARRAY_BUFFER, colorBuffer);
 	GLint normalIndex = glGetAttribLocation(programm, "color");
 	glEnableVertexAttribArray(normalIndex);
 	glVertexAttribPointer(normalIndex, 3, GL_FLOAT, GL_FALSE, 0, 0);

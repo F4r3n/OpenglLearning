@@ -78,7 +78,7 @@ void Game::run() {
 	stage.addObject(torus);
 	stage.addObject(torus2);
 	stage.addObject(s);
-	for(int i=0;i<10;++i) stage.addObject(new GameSphere(name,programm,0.25,glm::vec3(1,1,0),glm::vec3(-5+i,0,0),"brick_colormap.tga"));
+	for(int i=0;i<10;++i) stage.addObject(new GameSphere(name,programm,0.25*i,glm::vec3(1,1,0),glm::vec3(-5+i,0,0),"brick_colormap.tga"));
 	stage.makeObject();
 
 

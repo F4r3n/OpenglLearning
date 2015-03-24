@@ -41,14 +41,15 @@ glm::vec3 GameTorus::torusPoint(double theta, double phi, double R, double r)/*{
 
 void GameTorus::makeObject() {
 
-	int indexT=0;
-	int indexP=0;
 	int nbBins = 50;
 
-	for(double theta = 0; theta < 2*glm::pi<float>(); theta+=2*glm::pi<float>() / nbBins) {
-		indexP=0;
+	for(int indexT = 0; indexT < nbBins; indexT++) {
 
-		for(double phi = 0; phi <2* glm::pi<float>() +glm::pi<float>() / nbBins; phi += 2*glm::pi<float>() / nbBins) {
+		for(int indexP = 0;indexP < nbBins; indexP++) {
+			double phi = 2*indexP*glm::pi<float>()/nbBins;
+			double theta = 2*indexT*glm::pi<float>()/nbBins;
+
+
 
 			glm::vec3 p = torusPoint(theta,phi,R,r);
 			color->push_back(colorValue[0]);
@@ -60,6 +61,18 @@ void GameTorus::makeObject() {
 			pos->push_back(p[2]);
 			vertexCount++;
 
+			uvs->push_back(indexP%2);
+			uvs->push_back(indexT%2);
+
+
+
+
+		}
+	}
+
+	for(int indexT = 0; indexT < nbBins; indexT++) {
+		for(int indexP =0;indexP < nbBins; indexP++) {
+
 
 			index->push_back(indexT*nbBins+indexP);
 			index->push_back(((indexT+1)%nbBins)*nbBins+indexP);
@@ -68,12 +81,11 @@ void GameTorus::makeObject() {
 			index->push_back(((indexT+1)%nbBins)*nbBins+indexP);
 			index->push_back(indexT*nbBins+(indexP+1)%nbBins);
 			index->push_back(((indexT+1)%nbBins)*nbBins+(indexP+1)%nbBins);
-			uvs->push_back((indexT%2)/2.f);
-			uvs->push_back((indexP%2)/2.f);
+			
 
-			indexP++;
 		}
-		indexT++;
+
+
 	}
 	textureID =glGetUniformLocation(programm, "colormap"); 
 
