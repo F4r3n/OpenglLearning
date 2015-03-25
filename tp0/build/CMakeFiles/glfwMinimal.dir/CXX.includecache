@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/guillaume/Documents/tp/opengl/opengl/tp0/camera.cpp
-camera.hpp
-/home/guillaume/Documents/tp/opengl/opengl/tp0/camera.hpp
-
 /home/guillaume/Documents/tp/opengl/opengl/tp0/camera.hpp
 iostream
 -
@@ -58,10 +54,6 @@ glm/gtc/constants.hpp
 stage.hpp
 /home/guillaume/Documents/tp/opengl/opengl/tp0/stage.hpp
 
-/home/guillaume/Documents/tp/opengl/opengl/tp0/gameObject.cpp
-gameObject.hpp
-/home/guillaume/Documents/tp/opengl/opengl/tp0/gameObject.hpp
-
 /home/guillaume/Documents/tp/opengl/opengl/tp0/gameObject.hpp
 GL/glew.h
 -
@@ -88,37 +80,13 @@ sstream
 error.h
 /home/guillaume/Documents/tp/opengl/opengl/tp0/error.h
 
-/home/guillaume/Documents/tp/opengl/opengl/tp0/gameSphere.cpp
-gameSphere.hpp
-/home/guillaume/Documents/tp/opengl/opengl/tp0/gameSphere.hpp
-
 /home/guillaume/Documents/tp/opengl/opengl/tp0/gameSphere.hpp
 gameObject.hpp
 /home/guillaume/Documents/tp/opengl/opengl/tp0/gameObject.hpp
 
-/home/guillaume/Documents/tp/opengl/opengl/tp0/gameTorus.cpp
-gameTorus.hpp
-/home/guillaume/Documents/tp/opengl/opengl/tp0/gameTorus.hpp
-
 /home/guillaume/Documents/tp/opengl/opengl/tp0/gameTorus.hpp
 gameObject.hpp
 /home/guillaume/Documents/tp/opengl/opengl/tp0/gameObject.hpp
-
-/home/guillaume/Documents/tp/opengl/opengl/tp0/glfwMinimal.cpp
-iostream
--
-GL/glew.h
--
-GLFW/glfw3.h
--
-glfwMinimal.h
-/home/guillaume/Documents/tp/opengl/opengl/tp0/glfwMinimal.h
-fstream
--
-vector
--
-game.hpp
-/home/guillaume/Documents/tp/opengl/opengl/tp0/game.hpp
 
 /home/guillaume/Documents/tp/opengl/opengl/tp0/glfwMinimal.h
 glm/glm.hpp
@@ -129,10 +97,6 @@ glm/gtc/type_ptr.hpp
 -
 glm/gtc/constants.hpp
 -
-stage.hpp
-/home/guillaume/Documents/tp/opengl/opengl/tp0/stage.hpp
-
-/home/guillaume/Documents/tp/opengl/opengl/tp0/stage.cpp
 stage.hpp
 /home/guillaume/Documents/tp/opengl/opengl/tp0/stage.hpp
 

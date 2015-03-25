@@ -63,26 +63,24 @@ void GameObject::makeObject() {
 	//--------- Encapsulation of an IBO 
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBuffer);
 	//--------- Desactivation (clean OpenGl state!!)
-	glBindVertexArray(0);
 	//	glActiveTexture(GL_TEXTURE0);
 	//	glBindTexture(GL_TEXTURE_2D, texture);
 
 	// Set our "myTextureSampler" sampler to user Texture Unit 0
+
+	glBindBuffer(GL_ARRAY_BUFFER, 0); 
+	glBufferData(GL_ARRAY_BUFFER, offset.size()*sizeof(float),offset.data(), GL_STATIC_DRAW);
 	for(GLuint i = 0; i < offset.size(); i++)
 	{
-		glBindVertexArray(vao);
-		glGenVertexArrays(1, &vao);
-		glBufferData(GL_ARRAY_BUFFER, offset.size()*sizeof(float),offset.data(), GL_STATIC_DRAW);
-		glBindBuffer(GL_ARRAY_BUFFER, 0); 
 		glEnableVertexAttribArray(6);
 		glBindBuffer(GL_ARRAY_BUFFER, vao);
-		glVertexAttribPointer(6, 3, GL_FLOAT, GL_FALSE, sizeof(float), (GLvoid*)0);
+		glVertexAttribPointer(6, 3, GL_FLOAT, GL_FALSE, 3*sizeof(float), (GLvoid*)0);
 		glBindBuffer(GL_ARRAY_BUFFER, 0);	
 		glVertexAttribDivisor(6, 1);  
-
 	}
+
+	glBindVertexArray(0);
 	check_gl_error();
-	//	glUniform1i(textureID, 0);
 }
 
 std::string GameObject::getName() {
@@ -101,12 +99,10 @@ glm::mat4 GameObject::moveObject() {
 
 
 void GameObject::draw() {
-	for(int i=0;i<offset.size()/3;i++) {
 
-		glBindVertexArray(vao);
-		glDrawElementsInstanced(type, index->size(), GL_UNSIGNED_INT, 0,offset.size()/3);
-		glBindVertexArray(0);
-	}
+	glBindVertexArray(vao);
+	glDrawElementsInstanced(type, index->size(), GL_UNSIGNED_INT, 0,offset.size()/3);
+	glBindVertexArray(0);
 
 }
 

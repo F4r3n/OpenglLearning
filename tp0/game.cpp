@@ -74,8 +74,8 @@ void Game::run() {
 	stage.init(programm);
 	std::string name = "tore";
 
-	std::vector<float> offset = {0,0,0,0,0,0};
-	stage.addObject(new GameSphere("sphere",programm,0.25,glm::vec3(1,1,0),offset,"brick_colormap.tga"));
+	std::vector<float> offset = {1,0,0, 0,0,0};
+	stage.addObject(new GameSphere("sphere",programm,1,glm::vec3(1,1,1),offset,"brick_colormap.tga"));
 	stage.makeObject();
 
 
