@@ -70,15 +70,18 @@ void Game::renderFrame() {
 }
 
 void Game::run() {
+
+	glUseProgram(programm);
+	stage.init(programm);
 	std::string name = "tore";
-	GameTorus *torus = new GameTorus(name,programm,0.5,0.25,glm::vec3(1,0,0),glm::vec3(0,2,-5),"checkerboard.tga");
+	GameTorus *torus = new GameTorus(name,programm,10,0.25,glm::vec3(1,0,0),glm::vec3(0,2,-5),"checkerboard.tga");
 	GameTorus *torus2 = new GameTorus(name,programm,1,0.25,glm::vec3(0,1,0),glm::vec3(1,0,-5),"brick_colormap.tga");
-	GameSphere *s = new GameSphere(name,programm,0.25,glm::vec3(1,1,0),glm::vec3(2,0,0),"checkerboard.tga");
+	GameSphere *s = new GameSphere("sphere",programm,0.25,glm::vec3(1,1,0),glm::vec3(2,0,0),"checkerboard.tga");
 
 	stage.addObject(torus);
 	stage.addObject(torus2);
 	stage.addObject(s);
-	for(int i=0;i<10;++i) stage.addObject(new GameSphere(name,programm,0.25*i,glm::vec3(1,1,0),glm::vec3(-5+i,0,0),"brick_colormap.tga"));
+	for(int i=0;i<10;++i) stage.addObject(new GameSphere("sphere",programm,0.25*i,glm::vec3(1,1,0),glm::vec3(-5+i,0,0),"brick_colormap.tga"));
 	stage.makeObject();
 
 
@@ -101,10 +104,8 @@ void Game::run() {
 		while(time<dt)
 			time+=0.01;
 		time=0;
-		glClear( GL_COLOR_BUFFER_BIT );
 
 		camera.update(time,window);
-		glUseProgram(programm);
 
 		glfwPollEvents();
 		renderFrame();

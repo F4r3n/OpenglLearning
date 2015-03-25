@@ -52,6 +52,10 @@ glm/gtc/constants.hpp
 stage.hpp
 /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/stage.hpp
 
+/home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/gameObject.cpp
+gameObject.hpp
+/home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/gameObject.hpp
+
 /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/gameObject.hpp
 GL/glew.h
 -

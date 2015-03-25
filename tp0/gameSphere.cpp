@@ -1,7 +1,7 @@
 #include "gameSphere.hpp"
 
 
-GameSphere::GameSphere(std::string &name, GLuint &programm,double R,glm::vec3 color,glm::vec3 translation,const std::string t):
+GameSphere::GameSphere(const std::string &name, GLuint &programm,double R,glm::vec3 color,glm::vec3 translation,const std::string t):
 	GameObject(name,programm,translation) {
 		this->R = R;
 		this->colorValue = color;

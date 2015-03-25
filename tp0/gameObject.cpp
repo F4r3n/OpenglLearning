@@ -1,6 +1,6 @@
 #include "gameObject.hpp"
 
-GameObject::GameObject(std::string &name,GLuint &programm,glm::vec3 translate) {
+GameObject::GameObject(const std::string &name,GLuint &programm,glm::vec3 translate) {
 	_name = name;
 	this->programm = programm;
 	color = new std::vector<float>();
@@ -38,8 +38,6 @@ void GameObject::makeObject() {
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBuffer);
 	glBufferData(GL_ELEMENT_ARRAY_BUFFER, index->size()* sizeof(unsigned int), index->data(), GL_STATIC_DRAW);
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
-	std::cout << index->size() << std::endl;
-	std::cout << vertexCount << std::endl;
 	
 	glGenBuffers(1, &textureBuffer);
 	glBindBuffer(GL_ARRAY_BUFFER, textureBuffer);
@@ -73,6 +71,10 @@ void GameObject::makeObject() {
 	// Set our "myTextureSampler" sampler to user Texture Unit 0
 
 //	glUniform1i(textureID, 0);
+}
+
+std::string GameObject::getName() {
+	return _name;
 }
 
 void GameObject::setType(GLuint type) {

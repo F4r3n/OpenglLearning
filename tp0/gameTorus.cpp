@@ -1,6 +1,6 @@
 #include "gameTorus.hpp"
 
-GameTorus::GameTorus(std::string &name, GLuint &programm,double R, double r,glm::vec3 color,glm::vec3 translation,const std::string t):
+GameTorus::GameTorus(const std::string &name, GLuint &programm,double R, double r,glm::vec3 color,glm::vec3 translation,const std::string t):
 	GameObject(name,programm,translation) {
 	this->R = R;
 	this->r = r;
@@ -41,7 +41,7 @@ glm::vec3 GameTorus::torusPoint(double theta, double phi, double R, double r)/*{
 
 void GameTorus::makeObject() {
 
-	int nbBins = 50;
+	int nbBins = 100;
 
 	for(int indexT = 0; indexT < nbBins; indexT++) {
 

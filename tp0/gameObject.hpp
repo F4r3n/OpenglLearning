@@ -15,7 +15,7 @@
 class GameObject {
 
 	public:
-		GameObject(std::string &name, GLuint &programm, glm::vec3 translate);
+		GameObject(const std::string &name, GLuint &programm, glm::vec3 translate);
 		~GameObject();
 		virtual void draw() = 0;
 		virtual void makeObject()=0;
@@ -23,6 +23,7 @@ class GameObject {
 		glm::vec3 translation;
 		void setType(GLuint type);
 		void setUnit(int unit);
+		std::string getName();
 
 	protected:
 
@@ -36,7 +37,6 @@ class GameObject {
 		std::vector<float> *uvs;
 		GLuint type;
 		GLuint texture;
-
 		GLuint textureID;
 		unsigned int vertexCount=0;
 
