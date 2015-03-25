@@ -1,8 +1,8 @@
 #include "gameSphere.hpp"
 
 
-GameSphere::GameSphere(const std::string &name, GLuint &programm,double R,glm::vec3 color,glm::vec3 translation,const std::string t):
-	GameObject(name,programm,translation) {
+GameSphere::GameSphere(const std::string &name, GLuint &programm,double R,glm::vec3 color,std::vector<float> &offset,const std::string t):
+	GameObject(name,programm,offset) {
 		this->R = R;
 		this->colorValue = color;
 		this->textureName = t;

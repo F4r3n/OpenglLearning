@@ -12,10 +12,12 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <glm/gtc/constants.hpp>
+#include <sstream>
+#include "error.h"
 class GameObject {
 
 	public:
-		GameObject(const std::string &name, GLuint &programm, glm::vec3 translate);
+		GameObject(const std::string &name, GLuint &programm, std::vector<float> &offset);
 		~GameObject();
 		virtual void draw() = 0;
 		virtual void makeObject()=0;
@@ -35,6 +37,7 @@ class GameObject {
 		std::vector<float> *pos;
 		std::vector<unsigned int> *index;
 		std::vector<float> *uvs;
+		std::vector<float> offset;
 		GLuint type;
 		GLuint texture;
 		GLuint textureID;

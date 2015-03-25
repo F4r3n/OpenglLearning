@@ -38,19 +38,22 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0
+CMAKE_SOURCE_DIR = /home/guillaume/Documents/tp/opengl/opengl/tp0
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build
+CMAKE_BINARY_DIR = /home/guillaume/Documents/tp/opengl/opengl/tp0/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
-	/usr/bin/cmake -i .
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,9 +72,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -134,6 +137,30 @@ camera.s: camera.cpp.s
 camera.cpp.s:
 	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/camera.cpp.s
 .PHONY : camera.cpp.s
+
+error.o: error.cpp.o
+.PHONY : error.o
+
+# target to build an object file
+error.cpp.o:
+	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/error.cpp.o
+.PHONY : error.cpp.o
+
+error.i: error.cpp.i
+.PHONY : error.i
+
+# target to preprocess a source file
+error.cpp.i:
+	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/error.cpp.i
+.PHONY : error.cpp.i
+
+error.s: error.cpp.s
+.PHONY : error.s
+
+# target to generate assembly for a file
+error.cpp.s:
+	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/error.cpp.s
+.PHONY : error.cpp.s
 
 game.o: game.cpp.o
 .PHONY : game.o
@@ -315,6 +342,9 @@ help:
 	@echo "... camera.o"
 	@echo "... camera.i"
 	@echo "... camera.s"
+	@echo "... error.o"
+	@echo "... error.i"
+	@echo "... error.s"
 	@echo "... game.o"
 	@echo "... game.i"
 	@echo "... game.s"

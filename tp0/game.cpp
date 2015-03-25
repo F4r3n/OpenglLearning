@@ -47,7 +47,6 @@ void Game::initGLEW() {
 
 void Game::make_resources() {
 
-	MatrixID = glGetUniformLocation(programm, "MVP");
 }
 
 void Game::renderFrame() {
@@ -74,14 +73,9 @@ void Game::run() {
 	glUseProgram(programm);
 	stage.init(programm);
 	std::string name = "tore";
-	GameTorus *torus = new GameTorus(name,programm,10,0.25,glm::vec3(1,0,0),glm::vec3(0,2,-5),"checkerboard.tga");
-	GameTorus *torus2 = new GameTorus(name,programm,1,0.25,glm::vec3(0,1,0),glm::vec3(1,0,-5),"brick_colormap.tga");
-	GameSphere *s = new GameSphere("sphere",programm,0.25,glm::vec3(1,1,0),glm::vec3(2,0,0),"checkerboard.tga");
 
-	stage.addObject(torus);
-	stage.addObject(torus2);
-	stage.addObject(s);
-	for(int i=0;i<10;++i) stage.addObject(new GameSphere("sphere",programm,0.25*i,glm::vec3(1,1,0),glm::vec3(-5+i,0,0),"brick_colormap.tga"));
+	std::vector<float> offset = {0,0,0,0,0,0};
+	stage.addObject(new GameSphere("sphere",programm,0.25,glm::vec3(1,1,0),offset,"brick_colormap.tga"));
 	stage.makeObject();
 
 
@@ -93,6 +87,7 @@ void Game::run() {
 	while(1)
 	{
 
+	glUseProgram(programm);
 		if (glfwGetKey(window,GLFW_KEY_ESCAPE) == GLFW_PRESS) break;
 		if(glfwGetKey(window, GLFW_KEY_L) == GLFW_PRESS && pressL == false){
 			if(type == GL_TRIANGLES) type = GL_LINES;

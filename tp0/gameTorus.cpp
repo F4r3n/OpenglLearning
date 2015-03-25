@@ -1,7 +1,7 @@
 #include "gameTorus.hpp"
 
-GameTorus::GameTorus(const std::string &name, GLuint &programm,double R, double r,glm::vec3 color,glm::vec3 translation,const std::string t):
-	GameObject(name,programm,translation) {
+GameTorus::GameTorus(const std::string &name, GLuint &programm,double R, double r,glm::vec3 color,std::vector<float> &offset,const std::string t):
+	GameObject(name,programm,offset) {
 	this->R = R;
 	this->r = r;
 	this->colorValue = color;

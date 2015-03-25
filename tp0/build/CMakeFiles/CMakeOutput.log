@@ -1,4 +1,4 @@
-The system is: Linux - 3.13.0-30-generic - x86_64
+The system is: Linux - 3.16.0-33-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /usr/bin/cc 
 Build flags: 
@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/2.8.12.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/2.8.12.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,74 +23,83 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/2.8.12.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/2.8.12.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp
+Change Dir: /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec304887681/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec304887681.dir/build.make CMakeFiles/cmTryCompileExec304887681.dir/build
-make[1]: entrant dans le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec304887681.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTryCompileExec304887681.dir/testCCompiler.c.o   -c /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTryCompileExec304887681
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec304887681.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec304887681.dir/testCCompiler.c.o  -o cmTryCompileExec304887681 -rdynamic 
-make[1]: quittant le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
+Run Build Command:/usr/bin/make "cmTryCompileExec1824055824/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1824055824.dir/build.make CMakeFiles/cmTryCompileExec1824055824.dir/build
+make[1]: Entering directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1824055824.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1824055824.dir/testCCompiler.c.o   -c /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec1824055824
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1824055824.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1824055824.dir/testCCompiler.c.o  -o cmTryCompileExec1824055824 -rdynamic 
+make[1]: Leaving directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp
+Change Dir: /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec1961739347/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1961739347.dir/build.make CMakeFiles/cmTryCompileExec1961739347.dir/build
-make[1]: entrant dans le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec1961739347.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1961739347.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
-Linking C executable cmTryCompileExec1961739347
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1961739347.dir/link.txt --verbose=1
-/usr/bin/cc     -v CMakeFiles/cmTryCompileExec1961739347.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec1961739347 -rdynamic  
+Run Build Command:/usr/bin/make "cmTryCompileExec3365168075/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3365168075.dir/build.make CMakeFiles/cmTryCompileExec3365168075.dir/build
+make[1]: Entering directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3365168075.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3365168075.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec3365168075
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3365168075.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTryCompileExec3365168075.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec3365168075 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper
 Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.2-19ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.9.1-16ubuntu6' --with-bugurl=file:///usr/share/doc/gcc-4.9/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.9 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.9 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.9-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.9-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.9-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
 Thread model: posix
-gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1961739347' '-rdynamic' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec1961739347 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec1961739347.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
-make[1]: quittant le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
+gcc version 4.9.1 (Ubuntu 4.9.1-16ubuntu6) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3365168075' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8McQ1p.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec3365168075 /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.9 -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../.. CMakeFiles/cmTryCompileExec3365168075.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec1961739347/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec1961739347.dir/build.make CMakeFiles/cmTryCompileExec1961739347.dir/build]
-  ignore line: [make[1]: entrant dans le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »]
-  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building C object CMakeFiles/cmTryCompileExec1961739347.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1961739347.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTryCompileExec1961739347]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1961739347.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTryCompileExec1961739347.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec1961739347 -rdynamic  ]
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec3365168075/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3365168075.dir/build.make CMakeFiles/cmTryCompileExec3365168075.dir/build]
+  ignore line: [make[1]: Entering directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec3365168075.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3365168075.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec3365168075]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3365168075.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTryCompileExec3365168075.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec3365168075 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper]
   ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.2-19ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.9.1-16ubuntu6' --with-bugurl=file:///usr/share/doc/gcc-4.9/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.9 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.9 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.9-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.9-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.9-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1961739347' '-rdynamic' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec1961739347 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec1961739347.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
+  ignore line: [gcc version 4.9.1 (Ubuntu 4.9.1-16ubuntu6) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3365168075' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8McQ1p.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec3365168075 /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.9 -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../.. CMakeFiles/cmTryCompileExec3365168075.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc8McQ1p.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [--sysroot=/] ==> ignore
     arg [--build-id] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
@@ -103,19 +112,19 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec1961739347] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib]
+    arg [cmTryCompileExec3365168075] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.9]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib]
     arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
     arg [-L/lib/../lib] ==> dir [/lib/../lib]
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
-    arg [CMakeFiles/cmTryCompileExec1961739347.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../..]
+    arg [CMakeFiles/cmTryCompileExec3365168075.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -125,91 +134,100 @@ Parsed C implicit link information from above output:
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [--no-as-needed] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o] ==> ignore
   remove lib [gcc]
   remove lib [gcc_s]
   remove lib [gcc]
   remove lib [gcc_s]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> [/usr/lib/gcc/x86_64-linux-gnu/4.8]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.9] ==> [/usr/lib/gcc/x86_64-linux-gnu/4.9]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib] ==> [/usr/lib]
   collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
   collapse library dir [/lib/../lib] ==> [/lib]
   collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
   collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../..] ==> [/usr/lib]
   implicit libs: [c]
-  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/4.8;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/4.9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
   implicit fwks: []
 
 
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp
+Change Dir: /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec1645975310/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1645975310.dir/build.make CMakeFiles/cmTryCompileExec1645975310.dir/build
-make[1]: entrant dans le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec1645975310.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTryCompileExec1645975310.dir/testCXXCompiler.cxx.o -c /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTryCompileExec1645975310
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1645975310.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTryCompileExec1645975310.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec1645975310 -rdynamic 
-make[1]: quittant le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
+Run Build Command:/usr/bin/make "cmTryCompileExec3161418309/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3161418309.dir/build.make CMakeFiles/cmTryCompileExec3161418309.dir/build
+make[1]: Entering directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3161418309.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3161418309.dir/testCXXCompiler.cxx.o -c /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec3161418309
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3161418309.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec3161418309.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec3161418309 -rdynamic 
+make[1]: Leaving directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp
+Change Dir: /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec2426445091/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2426445091.dir/build.make CMakeFiles/cmTryCompileExec2426445091.dir/build
-make[1]: entrant dans le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec2426445091.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTryCompileExec2426445091.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTryCompileExec2426445091
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2426445091.dir/link.txt --verbose=1
-/usr/bin/c++      -v CMakeFiles/cmTryCompileExec2426445091.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec2426445091 -rdynamic  
+Run Build Command:/usr/bin/make "cmTryCompileExec924272991/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec924272991.dir/build.make CMakeFiles/cmTryCompileExec924272991.dir/build
+make[1]: Entering directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec924272991.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec924272991.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec924272991
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec924272991.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTryCompileExec924272991.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec924272991 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper
 Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.2-19ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.9.1-16ubuntu6' --with-bugurl=file:///usr/share/doc/gcc-4.9/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.9 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.9 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.9-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.9-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.9-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
 Thread model: posix
-gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2426445091' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec2426445091 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec2426445091.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
-make[1]: quittant le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
+gcc version 4.9.1 (Ubuntu 4.9.1-16ubuntu6) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec924272991' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper -plugin-opt=-fresolution=/tmp/cccLiehB.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec924272991 /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.9 -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../.. CMakeFiles/cmTryCompileExec924272991.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec2426445091/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec2426445091.dir/build.make CMakeFiles/cmTryCompileExec2426445091.dir/build]
-  ignore line: [make[1]: entrant dans le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »]
-  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec2426445091.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec2426445091.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTryCompileExec2426445091]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2426445091.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTryCompileExec2426445091.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec2426445091 -rdynamic  ]
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec924272991/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec924272991.dir/build.make CMakeFiles/cmTryCompileExec924272991.dir/build]
+  ignore line: [make[1]: Entering directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec924272991.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec924272991.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec924272991]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec924272991.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTryCompileExec924272991.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec924272991 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper]
   ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.2-19ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.9.1-16ubuntu6' --with-bugurl=file:///usr/share/doc/gcc-4.9/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.9 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.9 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.9-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.9-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.9-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2426445091' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec2426445091 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec2426445091.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
+  ignore line: [gcc version 4.9.1 (Ubuntu 4.9.1-16ubuntu6) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec924272991' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper -plugin-opt=-fresolution=/tmp/cccLiehB.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec924272991 /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.9 -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../.. CMakeFiles/cmTryCompileExec924272991.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cccLiehB.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [--sysroot=/] ==> ignore
     arg [--build-id] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
@@ -222,19 +240,19 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec2426445091] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib]
+    arg [cmTryCompileExec924272991] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.9]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib]
     arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
     arg [-L/lib/../lib] ==> dir [/lib/../lib]
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
-    arg [CMakeFiles/cmTryCompileExec2426445091.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../..]
+    arg [CMakeFiles/cmTryCompileExec924272991.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -242,472 +260,112 @@ Parsed CXX implicit link information from above output:
     arg [-lc] ==> lib [c]
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o] ==> ignore
   remove lib [gcc_s]
   remove lib [gcc]
   remove lib [gcc_s]
   remove lib [gcc]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> [/usr/lib/gcc/x86_64-linux-gnu/4.8]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.9] ==> [/usr/lib/gcc/x86_64-linux-gnu/4.9]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib] ==> [/usr/lib]
   collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
   collapse library dir [/lib/../lib] ==> [/lib]
   collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
   collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../..] ==> [/usr/lib]
   implicit libs: [stdc++;m;c]
-  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/4.8;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/4.9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
   implicit fwks: []
 
 
 Determining if the function XOpenDisplay exists in the /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so passed with the following output:
-Change Dir: /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec1404655563/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1404655563.dir/build.make CMakeFiles/cmTryCompileExec1404655563.dir/build
-make[1]: entrant dans le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec1404655563.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTryCompileExec1404655563.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec1404655563
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1404655563.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay    CMakeFiles/cmTryCompileExec1404655563.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1404655563 -rdynamic -lX11 -lXext 
-make[1]: quittant le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-
-
-Determining if the function gethostbyname exists passed with the following output:
-Change Dir: /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec2194474851/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2194474851.dir/build.make CMakeFiles/cmTryCompileExec2194474851.dir/build
-make[1]: entrant dans le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec2194474851.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTryCompileExec2194474851.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec2194474851
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2194474851.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTryCompileExec2194474851.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2194474851 -rdynamic 
-make[1]: quittant le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-
-
-Determining if the function connect exists passed with the following output:
-Change Dir: /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec854361173/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec854361173.dir/build.make CMakeFiles/cmTryCompileExec854361173.dir/build
-make[1]: entrant dans le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec854361173.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTryCompileExec854361173.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec854361173
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec854361173.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTryCompileExec854361173.dir/CheckFunctionExists.c.o  -o cmTryCompileExec854361173 -rdynamic 
-make[1]: quittant le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-
-
-Determining if the function remove exists passed with the following output:
-Change Dir: /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec247174626/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec247174626.dir/build.make CMakeFiles/cmTryCompileExec247174626.dir/build
-make[1]: entrant dans le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec247174626.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTryCompileExec247174626.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec247174626
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec247174626.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove    CMakeFiles/cmTryCompileExec247174626.dir/CheckFunctionExists.c.o  -o cmTryCompileExec247174626 -rdynamic 
-make[1]: quittant le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-
-
-Determining if the function shmat exists passed with the following output:
-Change Dir: /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec3725239607/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3725239607.dir/build.make CMakeFiles/cmTryCompileExec3725239607.dir/build
-make[1]: entrant dans le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec3725239607.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTryCompileExec3725239607.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec3725239607
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3725239607.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat    CMakeFiles/cmTryCompileExec3725239607.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3725239607 -rdynamic 
-make[1]: quittant le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-
-
-Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
-Change Dir: /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec3510157000/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3510157000.dir/build.make CMakeFiles/cmTryCompileExec3510157000.dir/build
-make[1]: entrant dans le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec3510157000.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTryCompileExec3510157000.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec3510157000
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3510157000.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    CMakeFiles/cmTryCompileExec3510157000.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3510157000 -rdynamic -lICE 
-make[1]: quittant le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-
-
-Determining if the function XOpenDisplay exists in the /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so passed with the following output:
 Change Dir: /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec550833261/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec550833261.dir/build.make CMakeFiles/cmTryCompileExec550833261.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec3580486545/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3580486545.dir/build.make CMakeFiles/cmTryCompileExec3580486545.dir/build
 make[1]: Entering directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec550833261.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTryCompileExec550833261.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec550833261
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec550833261.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay    CMakeFiles/cmTryCompileExec550833261.dir/CheckFunctionExists.c.o  -o cmTryCompileExec550833261 -rdynamic -lX11 -lXext 
+Building C object CMakeFiles/cmTryCompileExec3580486545.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTryCompileExec3580486545.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3580486545
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3580486545.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay    CMakeFiles/cmTryCompileExec3580486545.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3580486545 -rdynamic -lX11 -lXext 
 make[1]: Leaving directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the function gethostbyname exists passed with the following output:
 Change Dir: /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec867395766/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec867395766.dir/build.make CMakeFiles/cmTryCompileExec867395766.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec3040450274/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3040450274.dir/build.make CMakeFiles/cmTryCompileExec3040450274.dir/build
 make[1]: Entering directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec867395766.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTryCompileExec867395766.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec867395766
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec867395766.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTryCompileExec867395766.dir/CheckFunctionExists.c.o  -o cmTryCompileExec867395766 -rdynamic 
+Building C object CMakeFiles/cmTryCompileExec3040450274.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTryCompileExec3040450274.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3040450274
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3040450274.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTryCompileExec3040450274.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3040450274 -rdynamic 
 make[1]: Leaving directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the function connect exists passed with the following output:
 Change Dir: /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec503522478/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec503522478.dir/build.make CMakeFiles/cmTryCompileExec503522478.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec546105794/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec546105794.dir/build.make CMakeFiles/cmTryCompileExec546105794.dir/build
 make[1]: Entering directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec503522478.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTryCompileExec503522478.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec503522478
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec503522478.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTryCompileExec503522478.dir/CheckFunctionExists.c.o  -o cmTryCompileExec503522478 -rdynamic 
+Building C object CMakeFiles/cmTryCompileExec546105794.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTryCompileExec546105794.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec546105794
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec546105794.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTryCompileExec546105794.dir/CheckFunctionExists.c.o  -o cmTryCompileExec546105794 -rdynamic 
 make[1]: Leaving directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the function remove exists passed with the following output:
 Change Dir: /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec1330518163/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1330518163.dir/build.make CMakeFiles/cmTryCompileExec1330518163.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec2672432452/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2672432452.dir/build.make CMakeFiles/cmTryCompileExec2672432452.dir/build
 make[1]: Entering directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec1330518163.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTryCompileExec1330518163.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec1330518163
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1330518163.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove    CMakeFiles/cmTryCompileExec1330518163.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1330518163 -rdynamic 
+Building C object CMakeFiles/cmTryCompileExec2672432452.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTryCompileExec2672432452.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2672432452
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2672432452.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove    CMakeFiles/cmTryCompileExec2672432452.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2672432452 -rdynamic 
 make[1]: Leaving directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the function shmat exists passed with the following output:
 Change Dir: /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec2645511291/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2645511291.dir/build.make CMakeFiles/cmTryCompileExec2645511291.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec2142687037/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2142687037.dir/build.make CMakeFiles/cmTryCompileExec2142687037.dir/build
 make[1]: Entering directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec2645511291.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTryCompileExec2645511291.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec2645511291
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2645511291.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat    CMakeFiles/cmTryCompileExec2645511291.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2645511291 -rdynamic 
+Building C object CMakeFiles/cmTryCompileExec2142687037.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTryCompileExec2142687037.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2142687037
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2142687037.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat    CMakeFiles/cmTryCompileExec2142687037.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2142687037 -rdynamic 
 make[1]: Leaving directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
 Change Dir: /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec1238524234/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1238524234.dir/build.make CMakeFiles/cmTryCompileExec1238524234.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec3165491390/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3165491390.dir/build.make CMakeFiles/cmTryCompileExec3165491390.dir/build
 make[1]: Entering directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec1238524234.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTryCompileExec1238524234.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec1238524234
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1238524234.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    CMakeFiles/cmTryCompileExec1238524234.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1238524234 -rdynamic -lICE 
+Building C object CMakeFiles/cmTryCompileExec3165491390.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTryCompileExec3165491390.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3165491390
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3165491390.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    CMakeFiles/cmTryCompileExec3165491390.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3165491390 -rdynamic -lICE 
 make[1]: Leaving directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
-
-
-Determining if the function XOpenDisplay exists in the /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so passed with the following output:
-Change Dir: /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec2175161168/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2175161168.dir/build.make CMakeFiles/cmTryCompileExec2175161168.dir/build
-make[1]: entrant dans le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec2175161168.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTryCompileExec2175161168.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec2175161168
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2175161168.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay    CMakeFiles/cmTryCompileExec2175161168.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2175161168 -rdynamic -lX11 -lXext 
-make[1]: quittant le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-
-
-Determining if the function gethostbyname exists passed with the following output:
-Change Dir: /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec777695769/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec777695769.dir/build.make CMakeFiles/cmTryCompileExec777695769.dir/build
-make[1]: entrant dans le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec777695769.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTryCompileExec777695769.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec777695769
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec777695769.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTryCompileExec777695769.dir/CheckFunctionExists.c.o  -o cmTryCompileExec777695769 -rdynamic 
-make[1]: quittant le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-
-
-Determining if the function connect exists passed with the following output:
-Change Dir: /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec2466472553/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2466472553.dir/build.make CMakeFiles/cmTryCompileExec2466472553.dir/build
-make[1]: entrant dans le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec2466472553.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTryCompileExec2466472553.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec2466472553
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2466472553.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTryCompileExec2466472553.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2466472553 -rdynamic 
-make[1]: quittant le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-
-
-Determining if the function remove exists passed with the following output:
-Change Dir: /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec3120710475/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3120710475.dir/build.make CMakeFiles/cmTryCompileExec3120710475.dir/build
-make[1]: entrant dans le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec3120710475.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTryCompileExec3120710475.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec3120710475
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3120710475.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove    CMakeFiles/cmTryCompileExec3120710475.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3120710475 -rdynamic 
-make[1]: quittant le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-
-
-Determining if the function shmat exists passed with the following output:
-Change Dir: /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec1972017260/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1972017260.dir/build.make CMakeFiles/cmTryCompileExec1972017260.dir/build
-make[1]: entrant dans le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec1972017260.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTryCompileExec1972017260.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec1972017260
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1972017260.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat    CMakeFiles/cmTryCompileExec1972017260.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1972017260 -rdynamic 
-make[1]: quittant le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-
-
-Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
-Change Dir: /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec3184132085/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3184132085.dir/build.make CMakeFiles/cmTryCompileExec3184132085.dir/build
-make[1]: entrant dans le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec3184132085.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTryCompileExec3184132085.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec3184132085
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3184132085.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    CMakeFiles/cmTryCompileExec3184132085.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3184132085 -rdynamic -lICE 
-make[1]: quittant le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-
-
-Determining if the function XOpenDisplay exists in the /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so passed with the following output:
-Change Dir: /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec1328120231/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1328120231.dir/build.make CMakeFiles/cmTryCompileExec1328120231.dir/build
-make[1]: Entering directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec1328120231.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTryCompileExec1328120231.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec1328120231
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1328120231.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay    CMakeFiles/cmTryCompileExec1328120231.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1328120231 -rdynamic -lX11 -lXext 
-make[1]: Leaving directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
-
-
-Determining if the function gethostbyname exists passed with the following output:
-Change Dir: /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec1557068459/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1557068459.dir/build.make CMakeFiles/cmTryCompileExec1557068459.dir/build
-make[1]: Entering directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec1557068459.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTryCompileExec1557068459.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec1557068459
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1557068459.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTryCompileExec1557068459.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1557068459 -rdynamic 
-make[1]: Leaving directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
-
-
-Determining if the function connect exists passed with the following output:
-Change Dir: /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec1020812171/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1020812171.dir/build.make CMakeFiles/cmTryCompileExec1020812171.dir/build
-make[1]: Entering directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec1020812171.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTryCompileExec1020812171.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec1020812171
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1020812171.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTryCompileExec1020812171.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1020812171 -rdynamic 
-make[1]: Leaving directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
-
-
-Determining if the function remove exists passed with the following output:
-Change Dir: /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec3753727580/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3753727580.dir/build.make CMakeFiles/cmTryCompileExec3753727580.dir/build
-make[1]: Entering directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec3753727580.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTryCompileExec3753727580.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec3753727580
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3753727580.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove    CMakeFiles/cmTryCompileExec3753727580.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3753727580 -rdynamic 
-make[1]: Leaving directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
-
-
-Determining if the function shmat exists passed with the following output:
-Change Dir: /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec4016029139/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec4016029139.dir/build.make CMakeFiles/cmTryCompileExec4016029139.dir/build
-make[1]: Entering directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec4016029139.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTryCompileExec4016029139.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec4016029139
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4016029139.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat    CMakeFiles/cmTryCompileExec4016029139.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4016029139 -rdynamic 
-make[1]: Leaving directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
-
-
-Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
-Change Dir: /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec1362324906/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1362324906.dir/build.make CMakeFiles/cmTryCompileExec1362324906.dir/build
-make[1]: Entering directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec1362324906.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTryCompileExec1362324906.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec1362324906
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1362324906.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    CMakeFiles/cmTryCompileExec1362324906.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1362324906 -rdynamic -lICE 
-make[1]: Leaving directory '/home/guillaume/Documents/tp/opengl/opengl/tp0/build/CMakeFiles/CMakeTmp'
-
-
-Determining if the function XOpenDisplay exists in the /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so passed with the following output:
-Change Dir: /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec2077624319/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2077624319.dir/build.make CMakeFiles/cmTryCompileExec2077624319.dir/build
-make[1]: entrant dans le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec2077624319.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTryCompileExec2077624319.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec2077624319
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2077624319.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay    CMakeFiles/cmTryCompileExec2077624319.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2077624319 -rdynamic -lX11 -lXext 
-make[1]: quittant le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-
-
-Determining if the function gethostbyname exists passed with the following output:
-Change Dir: /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec1234078119/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1234078119.dir/build.make CMakeFiles/cmTryCompileExec1234078119.dir/build
-make[1]: entrant dans le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec1234078119.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTryCompileExec1234078119.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec1234078119
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1234078119.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTryCompileExec1234078119.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1234078119 -rdynamic 
-make[1]: quittant le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-
-
-Determining if the function connect exists passed with the following output:
-Change Dir: /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec1896839621/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1896839621.dir/build.make CMakeFiles/cmTryCompileExec1896839621.dir/build
-make[1]: entrant dans le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec1896839621.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTryCompileExec1896839621.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec1896839621
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1896839621.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTryCompileExec1896839621.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1896839621 -rdynamic 
-make[1]: quittant le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-
-
-Determining if the function remove exists passed with the following output:
-Change Dir: /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec530662526/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec530662526.dir/build.make CMakeFiles/cmTryCompileExec530662526.dir/build
-make[1]: entrant dans le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec530662526.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTryCompileExec530662526.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec530662526
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec530662526.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove    CMakeFiles/cmTryCompileExec530662526.dir/CheckFunctionExists.c.o  -o cmTryCompileExec530662526 -rdynamic 
-make[1]: quittant le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-
-
-Determining if the function shmat exists passed with the following output:
-Change Dir: /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec2702600296/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2702600296.dir/build.make CMakeFiles/cmTryCompileExec2702600296.dir/build
-make[1]: entrant dans le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec2702600296.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTryCompileExec2702600296.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec2702600296
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2702600296.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat    CMakeFiles/cmTryCompileExec2702600296.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2702600296 -rdynamic 
-make[1]: quittant le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-
-
-Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
-Change Dir: /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec3964661876/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3964661876.dir/build.make CMakeFiles/cmTryCompileExec3964661876.dir/build
-make[1]: entrant dans le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
-/usr/bin/cmake -E cmake_progress_report /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec3964661876.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTryCompileExec3964661876.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec3964661876
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3964661876.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    CMakeFiles/cmTryCompileExec3964661876.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3964661876 -rdynamic -lICE 
-make[1]: quittant le répertoire « /home/eleves/promo16/info/kotulski/Documents/TP/opengl/tp0/build/CMakeFiles/CMakeTmp »
 
 

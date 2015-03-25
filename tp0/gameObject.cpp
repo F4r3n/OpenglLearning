@@ -1,14 +1,14 @@
 #include "gameObject.hpp"
 
-GameObject::GameObject(const std::string &name,GLuint &programm,glm::vec3 translate) {
+GameObject::GameObject(const std::string &name,GLuint &programm,std::vector<float> &offset) {
 	_name = name;
 	this->programm = programm;
 	color = new std::vector<float>();
 	pos = new std::vector<float>();
 	index = new std::vector<unsigned int>();
 	uvs = new std::vector<float>();
-	this->translation = translate;
 	type = GL_TRIANGLES;
+	this->offset = offset;
 
 }
 
@@ -17,7 +17,6 @@ void GameObject::setUnit(int unit) {
 }
 
 void GameObject::makeObject() {
-
 	GLuint positionBuffer;
 	GLuint indexBuffer;
 	GLuint colorBuffer;
@@ -38,7 +37,7 @@ void GameObject::makeObject() {
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBuffer);
 	glBufferData(GL_ELEMENT_ARRAY_BUFFER, index->size()* sizeof(unsigned int), index->data(), GL_STATIC_DRAW);
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
-	
+
 	glGenBuffers(1, &textureBuffer);
 	glBindBuffer(GL_ARRAY_BUFFER, textureBuffer);
 	glBufferData(GL_ARRAY_BUFFER, uvs->size()* sizeof(float), uvs->data(), GL_STATIC_DRAW);
@@ -65,12 +64,25 @@ void GameObject::makeObject() {
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBuffer);
 	//--------- Desactivation (clean OpenGl state!!)
 	glBindVertexArray(0);
-//	glActiveTexture(GL_TEXTURE0);
-//	glBindTexture(GL_TEXTURE_2D, texture);
+	//	glActiveTexture(GL_TEXTURE0);
+	//	glBindTexture(GL_TEXTURE_2D, texture);
 
 	// Set our "myTextureSampler" sampler to user Texture Unit 0
+	for(GLuint i = 0; i < offset.size(); i++)
+	{
+		glBindVertexArray(vao);
+		glGenVertexArrays(1, &vao);
+		glBufferData(GL_ARRAY_BUFFER, offset.size()*sizeof(float),offset.data(), GL_STATIC_DRAW);
+		glBindBuffer(GL_ARRAY_BUFFER, 0); 
+		glEnableVertexAttribArray(6);
+		glBindBuffer(GL_ARRAY_BUFFER, vao);
+		glVertexAttribPointer(6, 3, GL_FLOAT, GL_FALSE, sizeof(float), (GLvoid*)0);
+		glBindBuffer(GL_ARRAY_BUFFER, 0);	
+		glVertexAttribDivisor(6, 1);  
 
-//	glUniform1i(textureID, 0);
+	}
+	check_gl_error();
+	//	glUniform1i(textureID, 0);
 }
 
 std::string GameObject::getName() {
@@ -89,10 +101,12 @@ glm::mat4 GameObject::moveObject() {
 
 
 void GameObject::draw() {
+	for(int i=0;i<offset.size()/3;i++) {
 
-	glBindVertexArray(vao);
-	glDrawElements(type, index->size(), GL_UNSIGNED_INT, 0);
-	glBindVertexArray(0);
+		glBindVertexArray(vao);
+		glDrawElementsInstanced(type, index->size(), GL_UNSIGNED_INT, 0,offset.size()/3);
+		glBindVertexArray(0);
+	}
 
 }
 
