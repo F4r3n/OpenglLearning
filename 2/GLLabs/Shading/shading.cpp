@@ -78,11 +78,11 @@ void init(void)/*{{{*/
     if (!glfwInit())
         shutDown(1);
     // Create OpenGL 3.x Core Profile Context                                                   
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 #ifdef __APPLE__
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 1);
 #else
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 4);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 #endif
     
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
