@@ -57,7 +57,8 @@ void main()
          * Set the new normal in the 'fragNormal' variable
          */
         /*}}}*/
-        fragNormal = vec3(normalize(texture(normalmap,uv).xyz));
+		vec3 normalMap = vec3(2*texture(normalmap,uv).xyz-1);
+        fragNormal = tangent*normalMap.x + bitangent*normalMap.y + normal*normalMap.z;
     }
     fragNormal = normalize(fragNormal); 
 
