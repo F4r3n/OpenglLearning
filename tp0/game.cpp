@@ -54,8 +54,6 @@ void Game::renderFrame() {
 	glEnable(GL_DEPTH_TEST);
 	glUseProgram(programm);
 
-	glm::mat4 ProjectionMatrix = camera.getProjection();
-	glm::mat4 ViewMatrix = camera.getView();
 
 	stage.draw();
 
@@ -99,11 +97,10 @@ void Game::run() {
 	glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
 	bool pressL=false;
 
-	while(1)
+	while(!(glfwGetKey(window,GLFW_KEY_ESCAPE) == GLFW_PRESS)) 
 	{
 
 		glUseProgram(programm);
-		if (glfwGetKey(window,GLFW_KEY_ESCAPE) == GLFW_PRESS) break;
 		if(glfwGetKey(window, GLFW_KEY_L) == GLFW_PRESS && pressL == false){
 			if(type == GL_TRIANGLES) type = GL_LINES;
 			else type = GL_TRIANGLES;
@@ -117,10 +114,10 @@ void Game::run() {
 		time2+=0.01;
 		camera.update(time,window);
 
-	glm::mat4 ProjectionMatrix = camera.getProjection();
-	glm::mat4 ViewMatrix = camera.getView();
+		glm::mat4 ProjectionMatrix = camera.getProjection();
+		glm::mat4 ViewMatrix = camera.getView();
 
-	stage.update(time2,MatrixID,ViewMatrix,ProjectionMatrix);
+		stage.update(time2,MatrixID,ViewMatrix,ProjectionMatrix);
 
 
 		glfwPollEvents();
@@ -143,7 +140,6 @@ std::string Game::file_contents(std::string file,GLint *length) {
 	if (myfile.is_open()){
 		while ( getline (myfile,line) ){
 			s+=line+"\n";
-
 		}
 		myfile.close();
 	} else std::cout << "fichier pas ouvert";
@@ -155,7 +151,6 @@ std::string Game::file_contents(std::string file,GLint *length) {
 
 void Game::createShaders() {
 
-	std::cout << "begin";
 	GLint length1;
 	GLint length2;
 
