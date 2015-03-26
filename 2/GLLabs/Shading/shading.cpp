@@ -237,6 +237,13 @@ void draw()/*{{{*/
     {
         /*!todo: Spot stuff for the bonus execise{{{*/
         /*}}}*/
+		ensi::gl::GLSLMaterial material ;
+		material = scene.materials[matname];
+		material.uniforms["spotpos"]=glm::vec3(0,1,0);
+		material.uniforms["spotlookat"]=glm::vec3(0,0,0);
+		material.uniforms["spotcolor"]=glm::vec3(1,0,0);
+		material.uniforms["spotangle"]=M_PI/2;
+
     }
     scene.drawObject("floor","checkerboard");
     scene.drawObject("suzanne","stone");

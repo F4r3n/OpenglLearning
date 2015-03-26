@@ -28,7 +28,8 @@ out vec4 fragColor;
 vec3 ComputeLightLambert(const in vec3 lightdirn, const in vec3 lightcolor, const in vec3 normal, const in vec3 mydiffuse)/*{{{*/
 {
     /*!todo exercise 1: Implement the diffuse (Lambertian) illumination model*/
-    vec3 lambert = vec3(1);  
+
+    vec3 lambert = max(0,dot(lightdirn,normal))*lightcolor*mydiffuse;
     return lambert;
 }/*}}}*/
 
@@ -36,7 +37,11 @@ vec3 ComputeLightLambert(const in vec3 lightdirn, const in vec3 lightcolor, cons
 vec3 ComputeLightSpecular (const in vec3 lightdirn, const in vec3 lightcolor, const in vec3 normal, const in vec3 eyedirn, const in vec3 myspecular, const in float myshininess) /*{{{*/
 {
     /*!todo exercise 3: Implement the specular (Blinn-Phong) illumination model*/
-    vec3 phong = vec3(1); 
+
+   // vec3 phong = pow(max(0,dot(eyedirn,(2*dot(lightdirn,normal)*normal - lightdirn))),myshininess)*lightcolor*myspecular;
+	vec3 halfDir = normalize(lightdirn + eyedirn);
+	float specAngle = max(dot(halfDir,normal),0.0);
+    vec3 phong = pow(specAngle,myshininess)*lightcolor*myspecular;
     return phong;
 }/*}}}*/
 
@@ -52,14 +57,15 @@ void main()
          * Set the new normal in the 'fragNormal' variable
          */
         /*}}}*/
-        fragNormal = vec3(1);
+        fragNormal = vec3(normalize(texture(normalmap,uv).xyz));
     }
     fragNormal = normalize(fragNormal); 
 
     vec3 lambert = ComputeLightLambert(lightdirn, lightcolor, fragNormal, diffuse);
 
     /*!todo exercise 3: Compute the eye direction for the Phong model*//*{{{*/
-    vec3 eyedirn = vec3(1);
+	
+    vec3 eyedirn = -normalize(position.xyz);
     /*}}}*/
     float myshininess=shininess*(.8+ sin(time) * 0.5f);
     if(exercise>=5)
