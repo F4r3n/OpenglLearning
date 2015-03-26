@@ -44,7 +44,7 @@ link_directories(${ASSIMP_LIBRARY_DIRS})
 ###  ASSIMP  ###}}}
 
 ###  The executable  ###{{{
-add_executable(glfwMinimal glfwMinimal.cpp camera.cpp gameObject.cpp gameTorus.cpp stage.cpp game.cpp gameSphere.cpp textures.cpp error.cpp)
+add_executable(glfwMinimal glfwMinimal.cpp camera.cpp gameObject.cpp gameTorus.cpp stage.cpp game.cpp gameSphere.cpp textures.cpp error.cpp light.cpp)
 target_link_libraries(glfwMinimal ${GL_LIBRARIES}  ${GLFW3_STATIC_LIBRARIES}) # this is to save an image (for screenshots)
 ###  The executable  ###}}}
 

@@ -57,7 +57,7 @@ void Game::renderFrame() {
 	glm::mat4 ProjectionMatrix = camera.getProjection();
 	glm::mat4 ViewMatrix = camera.getView();
 
-	stage.draw(MatrixID,ViewMatrix,ProjectionMatrix);
+	stage.draw();
 
 
 	//--------- Clean state again
@@ -74,20 +74,35 @@ void Game::run() {
 	stage.init(programm);
 	std::string name = "tore";
 
-	std::vector<float> offset = {1,0,0, 0,0,0};
-	stage.addObject(new GameSphere("sphere",programm,1,glm::vec3(1,1,1),offset,"brick_colormap.tga"));
+	std::vector<float> offset;
+	for(int i=0;i<10;i++) {
+		for(int j=0;j<10;j++) { 
+			for(int k=0;k<10;k++) { 
+
+				offset.push_back(i);
+				offset.push_back(j);
+				offset.push_back(k);
+			}
+		}
+
+	}
+	std::vector<float> toreOffset = {-2.0f,0.0f,0.0f};
+	stage.addObject(new GameTorus("tore",programm,1,0.25,glm::vec3(1,1,1),toreOffset,"checkerboard.tga"));
+
+	stage.addObject(new GameSphere("sphere",programm,0.25,glm::vec3(1,1,1),offset,"brick_colormap.tga"));
 	stage.makeObject();
 
 
 	float dt = 1/60;
 	float time = 0;
+	float time2 = 0;
 	glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
 	bool pressL=false;
 
 	while(1)
 	{
 
-	glUseProgram(programm);
+		glUseProgram(programm);
 		if (glfwGetKey(window,GLFW_KEY_ESCAPE) == GLFW_PRESS) break;
 		if(glfwGetKey(window, GLFW_KEY_L) == GLFW_PRESS && pressL == false){
 			if(type == GL_TRIANGLES) type = GL_LINES;
@@ -99,8 +114,14 @@ void Game::run() {
 		while(time<dt)
 			time+=0.01;
 		time=0;
-
+		time2+=0.01;
 		camera.update(time,window);
+
+	glm::mat4 ProjectionMatrix = camera.getProjection();
+	glm::mat4 ViewMatrix = camera.getView();
+
+	stage.update(time2,MatrixID,ViewMatrix,ProjectionMatrix);
+
 
 		glfwPollEvents();
 		renderFrame();
