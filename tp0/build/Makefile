@@ -282,6 +282,30 @@ glfwMinimal.cpp.s:
 	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/glfwMinimal.cpp.s
 .PHONY : glfwMinimal.cpp.s
 
+light.o: light.cpp.o
+.PHONY : light.o
+
+# target to build an object file
+light.cpp.o:
+	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/light.cpp.o
+.PHONY : light.cpp.o
+
+light.i: light.cpp.i
+.PHONY : light.i
+
+# target to preprocess a source file
+light.cpp.i:
+	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/light.cpp.i
+.PHONY : light.cpp.i
+
+light.s: light.cpp.s
+.PHONY : light.s
+
+# target to generate assembly for a file
+light.cpp.s:
+	$(MAKE) -f CMakeFiles/glfwMinimal.dir/build.make CMakeFiles/glfwMinimal.dir/light.cpp.s
+.PHONY : light.cpp.s
+
 stage.o: stage.cpp.o
 .PHONY : stage.o
 
@@ -360,6 +384,9 @@ help:
 	@echo "... glfwMinimal.o"
 	@echo "... glfwMinimal.i"
 	@echo "... glfwMinimal.s"
+	@echo "... light.o"
+	@echo "... light.i"
+	@echo "... light.s"
 	@echo "... stage.o"
 	@echo "... stage.i"
 	@echo "... stage.s"

@@ -13,18 +13,7 @@ GameSphere::~GameSphere() {
 }
 
 void GameSphere::draw() {
-
-	GLfloat fLargest;
-	glActiveTexture(GL_TEXTURE0);
-
-	glBindTexture(GL_TEXTURE_2D, texture);
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-	// Set our "myTextureSampler" sampler to user Texture Unit 0
-	glGetFloatv(GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT, &fLargest);
-	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAX_ANISOTROPY_EXT, fLargest);
-	glUniform1i(textureID, 0);
 	GameObject::draw();
-
 }
 
 glm::vec3 GameSphere::torusPoint(double theta, double phi, double R)/*{{{*/
@@ -35,7 +24,6 @@ glm::vec3 GameSphere::torusPoint(double theta, double phi, double R)/*{{{*/
 	z = R*glm::sin(phi);
 
 
-	//!todo You may implement the correct formula for the torus point here
 	return glm::vec3(x,y,z);
 }/*}}}*/
 
@@ -72,8 +60,6 @@ void GameSphere::makeObject() {
 
 	for(int indexT = 0; indexT < nbBins; indexT++) {
 		for(int indexP =0;indexP < nbBins-1; indexP++) {
-
-
 			index->push_back(indexT*nbBins+indexP);
 			index->push_back(((indexT+1)%nbBins)*nbBins+indexP);
 			index->push_back(indexT*nbBins+((indexP+1)));
@@ -81,11 +67,7 @@ void GameSphere::makeObject() {
 			index->push_back(((indexT+1)%nbBins)*nbBins+indexP);
 			index->push_back(indexT*nbBins+((indexP+1)));
 			index->push_back(((indexT+1)%nbBins)*nbBins+(indexP+1));
-			
-
 		}
-
-
 	}
 
 	textureID =glGetUniformLocation(programm, "colormap"); 

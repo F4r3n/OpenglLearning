@@ -19,7 +19,7 @@ class GameObject {
 	public:
 		GameObject(const std::string &name, GLuint &programm, std::vector<float> &offset);
 		~GameObject();
-		virtual void draw() = 0;
+		virtual void draw();
 		virtual void makeObject()=0;
 		glm::mat4 moveObject();
 		glm::vec3 translation;

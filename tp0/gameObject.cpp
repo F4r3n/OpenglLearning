@@ -22,6 +22,13 @@ void GameObject::makeObject() {
 	GLuint colorBuffer;
 	GLuint textureBuffer;
 
+	GLuint instanceVBO;
+	glGenBuffers(1, &instanceVBO);
+	glBindBuffer(GL_ARRAY_BUFFER, instanceVBO);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(float) * offset.size(), offset.data(), GL_STATIC_DRAW);
+	glBindBuffer(GL_ARRAY_BUFFER, 0);
+
+
 	glGenBuffers(1, &positionBuffer);
 	glBindBuffer(GL_ARRAY_BUFFER, positionBuffer);
 	glBufferData(GL_ARRAY_BUFFER, vertexCount* 3 * sizeof(float), pos->data(), GL_STATIC_DRAW);
@@ -68,16 +75,13 @@ void GameObject::makeObject() {
 
 	// Set our "myTextureSampler" sampler to user Texture Unit 0
 
-	glBindBuffer(GL_ARRAY_BUFFER, 0); 
-	glBufferData(GL_ARRAY_BUFFER, offset.size()*sizeof(float),offset.data(), GL_STATIC_DRAW);
-	for(GLuint i = 0; i < offset.size(); i++)
-	{
-		glEnableVertexAttribArray(6);
-		glBindBuffer(GL_ARRAY_BUFFER, vao);
-		glVertexAttribPointer(6, 3, GL_FLOAT, GL_FALSE, 3*sizeof(float), (GLvoid*)0);
-		glBindBuffer(GL_ARRAY_BUFFER, 0);	
-		glVertexAttribDivisor(6, 1);  
-	}
+
+
+	glEnableVertexAttribArray(6);
+	glBindBuffer(GL_ARRAY_BUFFER, instanceVBO);
+	glVertexAttribPointer(6, 3, GL_FLOAT, GL_FALSE, 3*sizeof(float), (GLvoid*)0);
+	glBindBuffer(GL_ARRAY_BUFFER, 0);	
+	glVertexAttribDivisor(6, 1);  
 
 	glBindVertexArray(0);
 	check_gl_error();
@@ -100,6 +104,15 @@ glm::mat4 GameObject::moveObject() {
 
 void GameObject::draw() {
 
+	GLfloat fLargest;
+	glActiveTexture(GL_TEXTURE0);
+
+	glBindTexture(GL_TEXTURE_2D, texture);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+	// Set our "myTextureSampler" sampler to user Texture Unit 0
+	glGetFloatv(GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT, &fLargest);
+	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAX_ANISOTROPY_EXT, fLargest);
+	glUniform1i(textureID, 0);
 	glBindVertexArray(vao);
 	glDrawElementsInstanced(type, index->size(), GL_UNSIGNED_INT, 0,offset.size()/3);
 	glBindVertexArray(0);
