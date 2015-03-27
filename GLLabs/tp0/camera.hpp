@@ -3,9 +3,12 @@
 
 #include <iostream>
 
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
+#include <glm/gtc/constants.hpp>
 #include <GL/glew.h>  // must be included before gl.h
 #include <GLFW/glfw3.h>
-#include "glfwMinimal.h"/*}}}*/
 #include <fstream>
 #include <vector>
 class Camera {

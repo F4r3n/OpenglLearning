@@ -8,7 +8,6 @@
 #include <GLFW/glfw3.h>
 #include <fstream>
 #include <vector>
-#include "camera.hpp"
 #include "gameTorus.hpp"
 #include "gameSphere.hpp"
 #include <glm/glm.hpp>
@@ -26,7 +25,7 @@ class Game {
 		void init();
 		void make_resources();
 		void renderFrame();
-		void createShaders();
+		GLuint createShaders(const std::string & vertex, const std::string & fragment);
 		void run();
 		void shutDown(int i);
 		std::string file_contents(std::string file,GLint *length);
@@ -34,7 +33,6 @@ class Game {
 	private:
 		GLuint programm;
 		GLFWwindow *window;
-		Camera camera;
 		Stage stage;
 		GLuint MatrixID;
 		const int width = 1024, height = 800;

@@ -9,7 +9,7 @@ void Game::init() {
 	initGLFW();
 	initGLEW();
 	type = GL_TRIANGLES;
-	createShaders();
+	programm = createShaders("minimal.v.glsl","minimal.f.glsl");
 
 	make_resources();
 }
@@ -52,14 +52,10 @@ void Game::make_resources() {
 void Game::renderFrame() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glEnable(GL_DEPTH_TEST);
-	glUseProgram(programm);
 
 
 	stage.draw();
 
-
-	//--------- Clean state again
-	glUseProgram(0);
 
 	GLFWwindow *window = glfwGetCurrentContext();
 	glfwSwapBuffers(window);
@@ -68,22 +64,19 @@ void Game::renderFrame() {
 
 void Game::run() {
 
-	glUseProgram(programm);
 	stage.init(programm);
-	std::string name = "tore";
 
 	std::vector<float> offset;
 	for(int i=0;i<10;i++) {
 		for(int j=0;j<10;j++) { 
 			for(int k=0;k<10;k++) { 
-
 				offset.push_back(i);
 				offset.push_back(j);
 				offset.push_back(k);
 			}
 		}
-
 	}
+
 	std::vector<float> toreOffset = {-2.0f,0.0f,0.0f};
 	stage.addObject(new GameTorus("tore",programm,1,0.25,glm::vec3(1,1,1),toreOffset,"checkerboard.tga"));
 
@@ -112,12 +105,8 @@ void Game::run() {
 			time+=0.01;
 		time=0;
 		time2+=0.01;
-		camera.update(time,window);
 
-		glm::mat4 ProjectionMatrix = camera.getProjection();
-		glm::mat4 ViewMatrix = camera.getView();
-
-		stage.update(time2,MatrixID,ViewMatrix,ProjectionMatrix);
+		stage.update(time2,window);
 
 
 		glfwPollEvents();
@@ -149,15 +138,15 @@ std::string Game::file_contents(std::string file,GLint *length) {
 	return s;
 }
 
-void Game::createShaders() {
+GLuint Game::createShaders(const std::string & vertex, const std::string & fragment) {
 
 	GLint length1;
 	GLint length2;
 
 	std::string vs;
 	std::string fs;
-	vs = file_contents("minimal.v.glsl", &length1);
-	fs = file_contents("minimal.f.glsl", &length2);
+	vs = file_contents(vertex, &length1);
+	fs = file_contents(fragment, &length2);
 
 	GLchar *vSource = (GLchar*)vs.c_str();
 	GLchar *fSource = (GLchar*)fs.c_str();
@@ -174,6 +163,7 @@ void Game::createShaders() {
 	glAttachShader(programm, vShader);
 	glAttachShader(programm, fShader);
 	glLinkProgram(programm);
+	return programm;
 
 }
 

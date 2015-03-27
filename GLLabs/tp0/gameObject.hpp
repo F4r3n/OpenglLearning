@@ -25,6 +25,7 @@ class GameObject {
 		glm::vec3 translation;
 		void setType(GLuint type);
 		void setUnit(int unit);
+		GLuint getProgramm();
 		std::string getName();
 
 	protected:

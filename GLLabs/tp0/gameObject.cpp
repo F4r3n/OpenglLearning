@@ -16,6 +16,10 @@ void GameObject::setUnit(int unit) {
 	this->unit = unit;
 }
 
+GLuint GameObject::getProgramm() {
+		return programm;
+}
+
 void GameObject::makeObject() {
 	GLuint positionBuffer;
 	GLuint indexBuffer;

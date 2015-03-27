@@ -1,8 +1,10 @@
 #ifndef STAGE_H
 #define STAGE_H
 
+#include "camera.hpp"
 #include "gameObject.hpp"
 #include "light.hpp"
+
 class Stage {
 	public:
 		Stage();
@@ -12,10 +14,11 @@ class Stage {
 		void makeObject();
 		void setType(GLuint type);
 		void init(GLuint programm);
-		void update(float time,GLuint MatrixID,glm::mat4 view,glm::mat4 proj);
+		void update(float time,GLFWwindow *window);
 
 	private:
 		std::vector<GameObject*> objects;
+		Camera camera;
 		GLuint transID;
 		GLuint viewID;
 		GLuint projID;
@@ -23,6 +26,7 @@ class Stage {
 		int numberTore;
 		int numberSphere;
 		GLuint timeID;
+		GLuint programm;
 	
 
 };
