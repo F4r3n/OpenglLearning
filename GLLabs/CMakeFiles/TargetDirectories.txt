@@ -1,0 +1,4 @@
+/home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs/Minimal/CMakeFiles/minimal.dir
+/home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs/Shading/CMakeFiles/shading.dir
+/home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs/Textures/CMakeFiles/textures.dir
+/home/eleves/promo16/info/kotulski/Documents/TP/opengl/2/GLLabs/CMakeFiles/utils.dir
