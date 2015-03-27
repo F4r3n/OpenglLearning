@@ -9,8 +9,9 @@ void Game::init() {
 	initGLFW();
 	initGLEW();
 	type = GL_TRIANGLES;
-	programm = createShaders("minimal.v.glsl","minimal.f.glsl");
 
+	programms.push_back(createShaders("particle.v.glsl","particle.f.glsl"));
+	programms.push_back(createShaders("minimal.v.glsl","minimal.f.glsl"));
 	make_resources();
 }
 
@@ -63,8 +64,9 @@ void Game::renderFrame() {
 }
 
 void Game::run() {
-
-	stage.init(programm);
+	stage = Stage(programms[0]);//TODO a changer (on donnait le programme de partcules à charger)
+	stage.init(programms);
+	
 
 	std::vector<float> offset;
 	for(int i=0;i<10;i++) {
@@ -82,7 +84,7 @@ void Game::run() {
 
 	stage.addObject(new GameSphere("sphere",programm,0.25,glm::vec3(1,1,1),offset,"brick_colormap.tga"));
 	stage.makeObject();
-
+	stage.addParticle(new Particle(10,glm::vec3(0,0,0),glm::vec3(1,1,1)));
 
 	float dt = 1/60;
 	float time = 0;

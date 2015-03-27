@@ -15,6 +15,7 @@
 #include <glm/gtc/type_ptr.hpp>
 #include <glm/gtc/constants.hpp>
 #include "stage.hpp"
+#include "particles.hpp"
 
 class Game {
 	public:
@@ -38,6 +39,8 @@ class Game {
 		const int width = 1024, height = 800;
 		GLuint type;
 		GLuint diffuseID;
+		GLuint particleProgramm;
+		std::vector<GLuint> programms;
 
 };
 #endif 
