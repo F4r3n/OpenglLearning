@@ -8,6 +8,7 @@
 #include <GLFW/glfw3.h>
 #include <fstream>
 #include <vector>
+#include <map>
 #include "gameTorus.hpp"
 #include "gameSphere.hpp"
 #include <glm/glm.hpp>
@@ -40,7 +41,7 @@ class Game {
 		GLuint type;
 		GLuint diffuseID;
 		GLuint particleProgramm;
-		std::vector<GLuint> programms;
+		std::map<std::string,GLuint> programms;
 
 };
 #endif 

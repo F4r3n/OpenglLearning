@@ -10,8 +10,8 @@ void Game::init() {
 	initGLEW();
 	type = GL_TRIANGLES;
 
-	programms.push_back(createShaders("particle.v.glsl","particle.f.glsl"));
-	programms.push_back(createShaders("minimal.v.glsl","minimal.f.glsl"));
+	programms["particle"] = createShaders("particle.v.glsl","particle.f.glsl");
+	programms["minimal"] = createShaders("minimal.v.glsl","minimal.f.glsl");
 	make_resources();
 }
 
@@ -64,7 +64,7 @@ void Game::renderFrame() {
 }
 
 void Game::run() {
-	stage = Stage(programms[0]);//TODO a changer (on donnait le programme de partcules à charger)
+	stage = Stage(programms["particle"]);//TODO a changer (on donnait le programme de partcules à charger)
 	stage.init(programms);
 	
 
@@ -80,11 +80,11 @@ void Game::run() {
 	}
 
 	std::vector<float> toreOffset = {-2.0f,0.0f,0.0f};
-	stage.addObject(new GameTorus("tore",programm,1,0.25,glm::vec3(1,1,1),toreOffset,"checkerboard.tga"));
+//	stage.addObject(new GameTorus("tore",programms["minimal"],1,0.25,glm::vec3(1,1,1),toreOffset,"checkerboard.tga"));
 
-	stage.addObject(new GameSphere("sphere",programm,0.25,glm::vec3(1,1,1),offset,"brick_colormap.tga"));
+//	stage.addObject(new GameSphere("sphere",programms["minimal"],0.25,glm::vec3(1,1,1),offset,"brick_colormap.tga"));
+	stage.addParticle(new Particle(programms["particle"],1000,glm::vec3(0,0,0),glm::vec3(1,1,1)));
 	stage.makeObject();
-	stage.addParticle(new Particle(10,glm::vec3(0,0,0),glm::vec3(1,1,1)));
 
 	float dt = 1/60;
 	float time = 0;

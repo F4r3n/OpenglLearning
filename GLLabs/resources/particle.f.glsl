@@ -1,6 +1,6 @@
 
 #version 330
-in vec3 vColor;
+in vec4 vColor;
 out vec4 out_color;
 
 

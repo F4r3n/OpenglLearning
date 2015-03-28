@@ -1,10 +1,11 @@
 #include "particle.hpp"
 
 
-Particle::Particle(unsigned int maxParticles, glm::vec3 pos, glm::vec3 color) {
+Particle::Particle(GLuint programm,unsigned int maxParticles, glm::vec3 pos, glm::vec3 color) {
 	this->maxParticles = maxParticles;
 	this->pos = pos;
 	this->color = color;
+	this->programm = programm;
 }
 
 void Particle::makeObject() {
@@ -14,6 +15,24 @@ void Particle::makeObject() {
 		-0.5f, 0.5f, 0.0f,
 		0.5f, 0.5f, 0.0f,
 	};
+
+	float positions [4*maxParticles];
+	for(int i=0;i<4*maxParticles;i+=4) {
+		positions[i] = pos[0];
+		positions[i+1] = pos[1];
+		positions[i+2] = pos[2];
+		positions[i+3] = 0.1f;
+	}
+
+	float colors [4*maxParticles];
+	int indexColor =1;
+	for(int i=0;i<4*maxParticles;i+=4) {
+		colors[i] = indexColor%2/2.0f;
+		colors[i+1] = 0;
+		colors[i+2] = indexColor%2;
+		colors[i+3] = 1;
+		indexColor++;
+	}
 	GLuint billboard_vertex_buffer;
 	glGenBuffers(1, &billboard_vertex_buffer);
 	glBindBuffer(GL_ARRAY_BUFFER, billboard_vertex_buffer);
@@ -23,15 +42,13 @@ void Particle::makeObject() {
 	GLuint particles_position_buffer;
 	glGenBuffers(1, &particles_position_buffer);
 	glBindBuffer(GL_ARRAY_BUFFER, particles_position_buffer);
-	// Initialize with empty (NULL) buffer : it will be updated later, each frame.
-	glBufferData(GL_ARRAY_BUFFER, maxParticles *  sizeof(glm::vec3), glm::value_ptr(pos), GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(positions), positions, GL_STATIC_DRAW);
 
 	// The VBO containing the colors of the particles
 	GLuint particles_color_buffer;
 	glGenBuffers(1, &particles_color_buffer);
 	glBindBuffer(GL_ARRAY_BUFFER, particles_color_buffer);
-	// Initialize with empty (NULL) buffer : it will be updated later, each frame.
-	glBufferData(GL_ARRAY_BUFFER, maxParticles * sizeof(glm::vec3), glm::value_ptr(color), GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER,sizeof(positions), colors, GL_STATIC_DRAW);
 
 
 	unsigned int index[] = {0,1,2,3};
@@ -44,44 +61,28 @@ void Particle::makeObject() {
 	glGenVertexArrays(1, &vao);
 	glBindVertexArray(vao);
 
-	glEnableVertexAttribArray(0);
+
 	glBindBuffer(GL_ARRAY_BUFFER, billboard_vertex_buffer);
-	glVertexAttribPointer(
-			  0, // attribute. No particular reason for 0, but must match the layout in the shader.
-			  3, // size
-			  GL_FLOAT, // type
-			  GL_FALSE, // normalized?
-			  0, // stride
-			  (void*)0 // array buffer offset
-			  );
+	GLint positionIndex = glGetAttribLocation(programm, "position");//here is the index and the associated GLSL attribute "position" (more on that later)
+	glEnableVertexAttribArray(positionIndex);
+	glVertexAttribPointer(positionIndex, 3, GL_FLOAT, GL_FALSE, 0, 0);
+
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBuffer);
 
 	// 2nd attribute buffer : positions of particles' centers
 	glEnableVertexAttribArray(1);
 	glBindBuffer(GL_ARRAY_BUFFER, particles_position_buffer);
-	glVertexAttribPointer(
-			  1, // attribute. No particular reason for 1, but must match the layout in the shader.
-			  1, // size : x + y + z + size => 4
-			  GL_FLOAT, // type
-			  GL_TRUE, // normalized?
-			  0, // stride
-			  (void*)0 // array buffer offset
-			  );
+	glVertexAttribPointer(1,4, GL_FLOAT, GL_FALSE, 4*sizeof(float), (void*)0 );
 
 	// 3rd attribute buffer : particles' colors
 	glEnableVertexAttribArray(2);
 	glBindBuffer(GL_ARRAY_BUFFER, particles_color_buffer);
-	glVertexAttribPointer(
-			  2, // attribute. No particular reason for 1, but must match the layout in the shader.
-			  1, // size : r + g + b + a => 4
-			  GL_UNSIGNED_BYTE, // type
-			  GL_TRUE, // normalized? *** YES, this means that the unsigned char[4] will be accessible with a vec4 (floats) in the shader ***
-			  0, // stride
-			  (void*)0 // array buffer offset
-			  );
+	glVertexAttribPointer(2,4,GL_FLOAT, GL_FALSE,4*sizeof(float), (void*)0 );
 
-	glVertexAttribDivisor(2, 1);  
 	glVertexAttribDivisor(1, 1);  
+	glVertexAttribDivisor(2, 1);  
 
+	glBindVertexArray(0);
 }
 
 

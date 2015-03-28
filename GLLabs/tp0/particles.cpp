@@ -16,6 +16,7 @@ void Particles::addParticle(Particle *particle) {
 
 void Particles::make() {
 
+	glUseProgram(programm);
 	for(auto p: particles) {
 		p->makeObject();
 	}

@@ -4,7 +4,6 @@ Light::Light() {
 }
 
 Light::Light(GLuint programm) {
-		glEnable(GL_LIGHTING); //Enable lighting
 	this->programm = programm;
 
 }
@@ -19,7 +18,7 @@ void Light::draw() {
 	glm::vec3 lightPos1 = glm::vec3(-1.0f, 0.5f, 0.5f);
 
 	glm::vec3 lightdir = glm::vec3(1.0f,1.0f,0.0f);
-
+	glUseProgram(programm);
 
 	GLuint ambientID = glGetUniformLocation(programm, "ambient");
 	glUniform3fv(ambientID, 1, glm::value_ptr(ambientColor));

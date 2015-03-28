@@ -11,18 +11,19 @@ Stage::Stage(GLuint programmParticles) {
 
 }
 
-void Stage::init(std::vector<GLuint> programms) {
+void Stage::init(std::map<std::string,GLuint> programms) {
 
 	this->programms = programms;
 	for( auto programm : programms) {
-		transID.push_back(glGetUniformLocation(programm, "trans"));
-		viewID.push_back(glGetUniformLocation(programm, "view"));
-		projID.push_back(glGetUniformLocation(programm, "proj"));
-		timeID.push_back(glGetUniformLocation(programm, "time"));
+		glUseProgram(programm.second);
+		transID[programm.first] = (glGetUniformLocation(programm.second, "trans"));
+		viewID[programm.first] = (glGetUniformLocation(programm.second, "view"));
+		projID[programm.first] = (glGetUniformLocation(programm.second, "proj"));
+		timeID[programm.first] = (glGetUniformLocation(programm.second, "time"));
 	}
 
 
-	light = Light(programms[0]);
+	light = Light(programms["minimal"]);
 }
 
 void Stage::addParticle(Particle *particle) {
@@ -37,11 +38,13 @@ void Stage::update(float time,GLFWwindow *window) {
 	glm::mat4 proj = camera.getProjection();
 	glm::mat4 view = camera.getView();
 	glm::mat4 ModelMatrix = glm::mat4(1.0);
-	for(int i=0;i<programms.size();i++) {
-		glUniformMatrix4fv(transID[i], 1, GL_FALSE, glm::value_ptr(ModelMatrix));
-		glUniformMatrix4fv(viewID[i], 1, GL_FALSE, glm::value_ptr(view));
-		glUniform1f(timeID[i],time);
-		glUniformMatrix4fv(projID[i], 1, GL_FALSE, glm::value_ptr(proj));
+	for(auto programm : programms) {
+
+		glUseProgram(programm.second);
+		glUniformMatrix4fv(transID[programm.first], 1, GL_FALSE, glm::value_ptr(ModelMatrix));
+		glUniformMatrix4fv(viewID[programm.first], 1, GL_FALSE, glm::value_ptr(view));
+		glUniform1f(timeID[programm.first],time);
+		glUniformMatrix4fv(projID[programm.first], 1, GL_FALSE, glm::value_ptr(proj));
 	}
 }
 
@@ -58,7 +61,7 @@ void Stage::setType(GLuint type) {
 
 void Stage::draw() {
 
-	glUseProgram(programm);
+	glUseProgram(programms["minimal"]);
 	light.draw();
 	glUseProgram(0);
 	for(auto o : objects) {
@@ -66,7 +69,7 @@ void Stage::draw() {
 		o->draw();
 		glUseProgram(0);
 	}
-//	particles.draw();
+	particles.draw();
 
 }
 
@@ -77,7 +80,7 @@ void Stage::makeObject() {
 		o->setUnit(unit);
 		unit++;
 	}
-//	particles.make();
+	particles.make();
 }
 
 

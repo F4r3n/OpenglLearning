@@ -5,6 +5,7 @@
 #include "gameObject.hpp"
 #include "light.hpp"
 #include "particles.hpp"
+#include <map>
 
 class Stage {
 	public:
@@ -16,21 +17,21 @@ class Stage {
 		void draw();
 		void makeObject();
 		void setType(GLuint type);
-		void init(std::vector<GLuint> programms);
+		void init(std::map<std::string,GLuint> programms);
 		void update(float time,GLFWwindow *window);
 
 	private:
 		std::vector<GameObject*> objects;
 		Particles particles;
 		Camera camera;
-		std::vector<GLuint> transID;
-		std::vector<GLuint> viewID;
-		std::vector<GLuint> projID;
+		std::map<std::string,GLuint> transID;
+		std::map<std::string,GLuint> viewID;
+		std::map<std::string,GLuint> projID;
 		Light light;
 		int numberTore;
 		int numberSphere;
-		std::vector<GLuint> timeID;
-		std::vector<GLuint> programms;
+		std::map<std::string,GLuint> timeID;
+		std::map<std::string,GLuint> programms;
 		GLuint programm;
 	
 

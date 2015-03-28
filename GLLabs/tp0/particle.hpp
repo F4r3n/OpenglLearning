@@ -14,13 +14,13 @@
 class Particle {
 
 	public:
-		Particle(unsigned int maxParticles, glm::vec3 pos, glm::vec3 color);
+		Particle(GLuint programm,unsigned int maxParticles, glm::vec3 pos, glm::vec3 color);
 		void makeObject();
 		void draw();
 	private:
 		glm::vec3 pos;
 		glm::vec3 color;
-
+		GLuint programm;
 		float speed;
 		float size;
 		unsigned int maxParticles;

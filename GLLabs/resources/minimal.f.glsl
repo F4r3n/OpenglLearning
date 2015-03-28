@@ -20,5 +20,5 @@ vec3 ComputeLightLambert(const in vec3 lightdirn, const in vec3 lightcolor, cons
 void main()
 {
 	vec3 lambert = ComputeLightLambert(lightdir,vec3(0.9f,0.9f,0.9f),vec3(0.0f,0.0f,0.0f),vec3(1.0f,0.5f,0.5f));
-	out_color=vec4(texture(colormap,uv).rgb*vec3(1.0f,0.9f,0.9f)+lambert,1.0);
+	out_color=vec4(texture(colormap,uv).rgb*vec3(1.0f,0.9f,0.9f)+lambert,1.0)*vec4(vColor,1.0);
 }
