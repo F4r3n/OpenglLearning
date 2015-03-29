@@ -36,7 +36,6 @@ glm::vec3 Particle::sphereDirection(double theta, double phi) {
 }
 
 void Particle::makeObject() {
-	std::cout << "max "<<maxParticles << std::endl;
 	const GLfloat g_vertex_buffer_data[] = {
 		-0.5f, -0.5f, 0.0f,
 		0.5f, -0.5f, 0.0f,

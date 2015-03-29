@@ -78,9 +78,10 @@ void Game::run() {
 		}
 	}
 
-	std::vector<float> toreOffset = {-2.0f,0.0f,0.0f};
+	std::vector<float> toreOffset = {0.0f,0.0f,0.0f,1.0f,0.0f,0.0f};
 	stage.addObject(new GameTorus("tore",programms["minimal"],1,0.25,glm::vec3(1,1,1),toreOffset,"checkerboard.tga"));
 	stage.addObject(new GameTorus("tore",programms["minimal"],2,0.25,glm::vec3(1,1,1),toreOffset,"checkerboard.tga"));
+//	stage.addObject(new GameCube("cube",programms["minimal"],1,glm::vec3(1,1,1),toreOffset,"brick_colormap.tga"));
 
 	//	stage.addObject(new GameSphere("sphere",programms["minimal"],0.25,glm::vec3(1,1,1),offset,"brick_colormap.tga"));
 //	Particles transmitter(programms["particle"],new Particle(programms["particle"],100,glm::vec3(0,0,0),glm::vec3(1,1,1),10));

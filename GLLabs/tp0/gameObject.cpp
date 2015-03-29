@@ -26,6 +26,8 @@ void GameObject::makeObject() {
 	GLuint colorBuffer;
 	GLuint textureBuffer;
 
+	std::cout << pos->size() <<std::endl;
+
 	GLuint instanceVBO;
 	glGenBuffers(1, &instanceVBO);
 	glBindBuffer(GL_ARRAY_BUFFER, instanceVBO);
@@ -35,12 +37,12 @@ void GameObject::makeObject() {
 
 	glGenBuffers(1, &positionBuffer);
 	glBindBuffer(GL_ARRAY_BUFFER, positionBuffer);
-	glBufferData(GL_ARRAY_BUFFER, vertexCount* 3 * sizeof(float), pos->data(), GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, pos->size()* sizeof(float), pos->data(), GL_STATIC_DRAW);
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
 
 	glGenBuffers(1, &colorBuffer);
 	glBindBuffer(GL_ARRAY_BUFFER, colorBuffer);
-	glBufferData(GL_ARRAY_BUFFER, vertexCount*3* sizeof(float), color->data(), GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, color->size()* sizeof(float), color->data(), GL_STATIC_DRAW);
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
 
 

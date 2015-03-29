@@ -17,6 +17,7 @@
 #include <glm/gtc/constants.hpp>
 #include "stage.hpp"
 #include "particles.hpp"
+#include "gameCube.hpp"
 
 class Game {
 	public:
