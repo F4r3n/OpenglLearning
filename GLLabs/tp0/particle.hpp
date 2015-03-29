@@ -11,12 +11,19 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <glm/gtc/constants.hpp>
+#include <math.h>
 class Particle {
 
 	public:
-		Particle(GLuint programm,unsigned int maxParticles, glm::vec3 pos, glm::vec3 color);
+		Particle(GLuint programm,unsigned int maxParticles, glm::vec3 pos, glm::vec3 color,int cycle);
 		void makeObject();
+		int getCycle();
 		void draw();
+		glm::vec3 sphereDirection(double theta, double phi);
+		Particle(Particle *p);
+		void update(float dt);
+
+		float time;
 	private:
 		glm::vec3 pos;
 		glm::vec3 color;
@@ -25,6 +32,8 @@ class Particle {
 		float size;
 		unsigned int maxParticles;
 		GLuint vao;
+		int cycle;
+		GLuint timeID;
 
 
 

@@ -13,16 +13,16 @@ class Stage {
 		Stage(GLuint programm);
 		~Stage();
 		void addObject(GameObject *object);
-		void addParticle(Particle *particle);
+		void addParticle(Particles *particles);
 		void draw();
 		void makeObject();
 		void setType(GLuint type);
 		void init(std::map<std::string,GLuint> programms);
-		void update(float time,GLFWwindow *window);
+		void update(float time,GLFWwindow *window, float dt);
 
 	private:
 		std::vector<GameObject*> objects;
-		Particles particles;
+		std::vector<Particles*> particlesTransmitter;
 		Camera camera;
 		std::map<std::string,GLuint> transID;
 		std::map<std::string,GLuint> viewID;

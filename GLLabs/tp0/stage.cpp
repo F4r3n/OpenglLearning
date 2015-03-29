@@ -1,11 +1,7 @@
 #include "stage.hpp"
 
+
 Stage::Stage() {
-
-}
-
-Stage::Stage(GLuint programmParticles) {
-	particles = Particles(programmParticles);
 	numberTore = 0;
 	numberSphere = 0;
 
@@ -26,14 +22,15 @@ void Stage::init(std::map<std::string,GLuint> programms) {
 	light = Light(programms["minimal"]);
 }
 
-void Stage::addParticle(Particle *particle) {
-	particles.addParticle(particle);
+void Stage::addParticle(Particles *particles) {
+	particlesTransmitter.push_back(particles);
 
 }
 
-void Stage::update(float time,GLFWwindow *window) {
+void Stage::update(float time,GLFWwindow *window, float dt) {
 
 	camera.update(time,window);
+
 
 	glm::mat4 proj = camera.getProjection();
 	glm::mat4 view = camera.getView();
@@ -43,9 +40,13 @@ void Stage::update(float time,GLFWwindow *window) {
 		glUseProgram(programm.second);
 		glUniformMatrix4fv(transID[programm.first], 1, GL_FALSE, glm::value_ptr(ModelMatrix));
 		glUniformMatrix4fv(viewID[programm.first], 1, GL_FALSE, glm::value_ptr(view));
-		glUniform1f(timeID[programm.first],time);
 		glUniformMatrix4fv(projID[programm.first], 1, GL_FALSE, glm::value_ptr(proj));
 	}
+		glUseProgram(programms["minimal"]);
+
+		glUniform1f(timeID["minimal"],time);
+	for(auto particles : particlesTransmitter)
+		particles->update(dt);
 }
 
 Stage::~Stage() {
@@ -69,7 +70,8 @@ void Stage::draw() {
 		o->draw();
 		glUseProgram(0);
 	}
-	particles.draw();
+	for(auto particles : particlesTransmitter)
+		particles->draw();
 
 }
 
@@ -80,7 +82,9 @@ void Stage::makeObject() {
 		o->setUnit(unit);
 		unit++;
 	}
-	particles.make();
+
+	for(auto particles : particlesTransmitter)
+		particles->make();
 }
 
 

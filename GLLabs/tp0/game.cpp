@@ -64,9 +64,8 @@ void Game::renderFrame() {
 }
 
 void Game::run() {
-	stage = Stage(programms["particle"]);//TODO a changer (on donnait le programme de partcules à charger)
 	stage.init(programms);
-	
+
 
 	std::vector<float> offset;
 	for(int i=0;i<10;i++) {
@@ -80,13 +79,19 @@ void Game::run() {
 	}
 
 	std::vector<float> toreOffset = {-2.0f,0.0f,0.0f};
-//	stage.addObject(new GameTorus("tore",programms["minimal"],1,0.25,glm::vec3(1,1,1),toreOffset,"checkerboard.tga"));
+	stage.addObject(new GameTorus("tore",programms["minimal"],1,0.25,glm::vec3(1,1,1),toreOffset,"checkerboard.tga"));
+	stage.addObject(new GameTorus("tore",programms["minimal"],2,0.25,glm::vec3(1,1,1),toreOffset,"checkerboard.tga"));
 
-//	stage.addObject(new GameSphere("sphere",programms["minimal"],0.25,glm::vec3(1,1,1),offset,"brick_colormap.tga"));
-	stage.addParticle(new Particle(programms["particle"],1000,glm::vec3(0,0,0),glm::vec3(1,1,1)));
+	//	stage.addObject(new GameSphere("sphere",programms["minimal"],0.25,glm::vec3(1,1,1),offset,"brick_colormap.tga"));
+//	Particles transmitter(programms["particle"],new Particle(programms["particle"],100,glm::vec3(0,0,0),glm::vec3(1,1,1),10));
+	Particles transmitter2(programms["particle"],new Particle(programms["particle"],100,glm::vec3(3,0,0),glm::vec3(1,0,1),10));
+
+//	stage.addParticle(&transmitter);
+	stage.addParticle(&transmitter2);
+
 	stage.makeObject();
 
-	float dt = 1/60;
+	float dt = 1/60.0f;
 	float time = 0;
 	float time2 = 0;
 	glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
@@ -108,7 +113,7 @@ void Game::run() {
 		time=0;
 		time2+=0.01;
 
-		stage.update(time2,window);
+		stage.update(time2,window,dt);
 
 
 		glfwPollEvents();
