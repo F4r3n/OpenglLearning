@@ -2,9 +2,6 @@
 
 
 Stage::Stage() {
-	numberTore = 0;
-	numberSphere = 0;
-
 }
 
 void Stage::init(std::map<std::string,GLuint> programms) {
@@ -42,9 +39,9 @@ void Stage::update(float time,GLFWwindow *window, float dt) {
 		glUniformMatrix4fv(viewID[programm.first], 1, GL_FALSE, glm::value_ptr(view));
 		glUniformMatrix4fv(projID[programm.first], 1, GL_FALSE, glm::value_ptr(proj));
 	}
-		glUseProgram(programms["minimal"]);
+	glUseProgram(programms["minimal"]);
 
-		glUniform1f(timeID["minimal"],time);
+	glUniform1f(timeID["minimal"],time);
 	for(auto particles : particlesTransmitter)
 		particles->update(dt);
 }
@@ -89,8 +86,6 @@ void Stage::makeObject() {
 
 
 void Stage::addObject(GameObject *object) {
-	if(object->getName() =="tore") numberTore++;
-	if(object->getName() =="sphere") numberSphere++;
 
 	objects.push_back(object);
 }

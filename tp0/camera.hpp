@@ -26,7 +26,7 @@ class Camera {
 		float initialFoV = 45.0f;
 		double xpos, ypos; 
 		float speed = 3.0f; // 3 units / second
-		float mouseSpeed = 0.005f;
+		float mouseSpeed = 0.009f;
 		glm::mat4 projection;
 		glm::mat4 view;
 };

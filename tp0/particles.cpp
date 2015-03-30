@@ -14,7 +14,6 @@ Particles::Particles(GLuint programm,Particle *particle) {
 void Particles::update(float dt) {
 		timer+=dt;
 		if(timer>frequency) {
-			std::cout << "redraw" << std::endl;
 			redraw();
 			timer = 0;
 		}

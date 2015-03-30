@@ -1,6 +1,6 @@
 #include "gameObject.hpp"
 
-GameObject::GameObject(const std::string &name,GLuint &programm,std::vector<float> &offset) {
+GameObject::GameObject(const std::string &name,GLuint &programm,std::vector<glm::vec3> &offset) {
 	_name = name;
 	this->programm = programm;
 	color = new std::vector<float>();
@@ -31,7 +31,7 @@ void GameObject::makeObject() {
 	GLuint instanceVBO;
 	glGenBuffers(1, &instanceVBO);
 	glBindBuffer(GL_ARRAY_BUFFER, instanceVBO);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(float) * offset.size(), offset.data(), GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(glm::vec3) * offset.size(), &offset[0], GL_STATIC_DRAW);
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
 
 
@@ -120,7 +120,7 @@ void GameObject::draw() {
 	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAX_ANISOTROPY_EXT, fLargest);
 	glUniform1i(textureID, 0);
 	glBindVertexArray(vao);
-	glDrawElementsInstanced(type, index->size(), GL_UNSIGNED_INT, 0,offset.size()/3);
+	glDrawElementsInstanced(type, index->size(), GL_UNSIGNED_INT, 0,offset.size());
 	glBindVertexArray(0);
 
 }

@@ -5,7 +5,7 @@
 
 class GameCube : public GameObject {
 	public:
-		GameCube(const std::string &name,GLuint programm,double size, glm::vec3 color,std::vector<float> offset, const std::string &t);
+		GameCube(const std::string &name,GLuint programm,double size, glm::vec3 color,std::vector<glm::vec3> offset, const std::string &t);
 		~GameCube();
 		void makeObject();
 		void draw();

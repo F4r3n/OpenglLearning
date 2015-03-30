@@ -1,6 +1,6 @@
 #include "gameCube.hpp"
 
-GameCube::GameCube(const std::string &name,GLuint programm,double size, glm::vec3 color,std::vector<float> offset,const std::string &t):
+GameCube::GameCube(const std::string &name,GLuint programm,double size, glm::vec3 color,std::vector<glm::vec3> offset,const std::string &t):
 	GameObject(name,programm,offset)
 {
 	this->textureName = t;

@@ -28,11 +28,8 @@ class Stage {
 		std::map<std::string,GLuint> viewID;
 		std::map<std::string,GLuint> projID;
 		Light light;
-		int numberTore;
-		int numberSphere;
 		std::map<std::string,GLuint> timeID;
 		std::map<std::string,GLuint> programms;
-		GLuint programm;
 	
 
 };

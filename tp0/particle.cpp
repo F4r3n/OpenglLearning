@@ -62,7 +62,7 @@ void Particle::makeObject() {
 	}
 
 	float speed [maxParticles];
-	for(int i=0;i<maxParticles;i++) speed[i] = (3*i/(float)maxParticles);
+	for(int i=0;i<maxParticles;i++) speed[i] = (3);
 
 	std::vector<float> directions;
 
