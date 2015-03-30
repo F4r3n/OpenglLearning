@@ -1,2 +1,0 @@
-/usr/bin/ar cr libutils.a  CMakeFiles/utils.dir/utils/utils.cpp.o CMakeFiles/utils.dir/utils/shaders.cpp.o CMakeFiles/utils.dir/utils/vao.cpp.o CMakeFiles/utils.dir/utils/textures.cpp.o CMakeFiles/utils.dir/utils/objloader.cpp.o CMakeFiles/utils.dir/utils/tangentspace.cpp.o CMakeFiles/utils.dir/utils/vboindexer.cpp.o
-/usr/bin/ranlib libutils.a
