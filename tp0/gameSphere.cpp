@@ -40,17 +40,12 @@ void GameSphere::makeObject() {
 
 
 			glm::vec3 p = torusPoint(theta,phi,R);
-			color->push_back(colorValue[0]*indexP/nbBins);
-			color->push_back(colorValue[1]);
-			color->push_back(colorValue[2]);
 
-			pos->push_back(p[0]);
-			pos->push_back(p[1]);
-			pos->push_back(p[2]);
+		color->push_back(glm::vec3(colorValue[0],colorValue[1],colorValue[2]));
+		pos->push_back(glm::vec3(p[0],p[1],p[2]));
 			vertexCount++;
 
-			uvs->push_back(indexP%2);
-			uvs->push_back(indexT%2);
+			uvs->push_back(glm::vec2(indexP%2,indexT%2));
 
 
 

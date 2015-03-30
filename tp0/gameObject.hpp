@@ -20,13 +20,15 @@ class GameObject {
 		GameObject(const std::string &name, GLuint &programm, std::vector<glm::vec3> &offset);
 		~GameObject();
 		virtual void draw();
-		virtual void makeObject()=0;
+		virtual void makeObject();
 		glm::mat4 moveObject();
 		glm::vec3 translation;
 		void setType(GLuint type);
 		void setUnit(int unit);
 		GLuint getProgramm();
 		std::string getName();
+		bool loadOBJ(const std::string &path);
+
 
 	protected:
 
@@ -34,11 +36,12 @@ class GameObject {
 		GLuint vao;
 		GLuint programm;
 		std::string _name;
-		std::vector<float> *color;
-		std::vector<float> *pos;
+		std::vector<glm::vec3> *color;
+		std::vector<glm::vec3> *pos;
 		std::vector<unsigned int> *index;
-		std::vector<float> *uvs;
+		std::vector<glm::vec2> *uvs;
 		std::vector<glm::vec3> offset;
+		std::vector<glm::vec3> *normals;
 		GLuint type;
 		GLuint texture;
 		GLuint textureID;

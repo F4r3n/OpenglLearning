@@ -2,12 +2,12 @@
 
 GameTorus::GameTorus(const std::string &name, GLuint &programm,double R, double r,glm::vec3 color,std::vector<glm::vec3> &offset,const std::string t):
 	GameObject(name,programm,offset) {
-	this->R = R;
-	this->r = r;
-	this->colorValue = color;
-	if(t=="") texture = -1;
-	this->textureName = t;
-}
+		this->R = R;
+		this->r = r;
+		this->colorValue = color;
+		if(t=="") texture = -1;
+		this->textureName = t;
+	}
 
 GameTorus::~GameTorus() {
 
@@ -18,10 +18,10 @@ void GameTorus::draw() {
 	glActiveTexture(GL_TEXTURE0);
 
 	glBindTexture(GL_TEXTURE_2D, texture);
-glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
 	// Set our "myTextureSampler" sampler to user Texture Unit 0
-glGetFloatv(GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT, &fLargest);
-			glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAX_ANISOTROPY_EXT, fLargest);
+	glGetFloatv(GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT, &fLargest);
+	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAX_ANISOTROPY_EXT, fLargest);
 	glUniform1i(textureID, 0);
 	GameObject::draw();
 
@@ -49,23 +49,13 @@ void GameTorus::makeObject() {
 			double phi = 2*indexP*glm::pi<float>()/nbBins;
 			double theta = 2*indexT*glm::pi<float>()/nbBins;
 
-
-
 			glm::vec3 p = torusPoint(theta,phi,R,r);
-			color->push_back(colorValue[0]);
-			color->push_back(colorValue[1]);
-			color->push_back(colorValue[2]);
 
-			pos->push_back(p[0]);
-			pos->push_back(p[1]);
-			pos->push_back(p[2]);
+			color->push_back(glm::vec3(colorValue[0],colorValue[1],colorValue[2]));
+			pos->push_back(glm::vec3(p[0],p[1],p[2]));
 			vertexCount++;
 
-			uvs->push_back(indexP%2);
-			uvs->push_back(indexT%2);
-
-
-
+			uvs->push_back(glm::vec2(indexP%2,indexT%2));
 
 		}
 	}
@@ -81,7 +71,7 @@ void GameTorus::makeObject() {
 			index->push_back(((indexT+1)%nbBins)*nbBins+indexP);
 			index->push_back(indexT*nbBins+(indexP+1)%nbBins);
 			index->push_back(((indexT+1)%nbBins)*nbBins+(indexP+1)%nbBins);
-			
+
 
 		}
 

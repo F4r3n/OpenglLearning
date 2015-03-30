@@ -78,8 +78,11 @@ void Game::run() {
 		}
 	}
 
-	std::vector<glm::vec3> toreOffset = {glm::vec3(0.0f,0.0f,0.0f),glm::vec3(1.0,0.0,0.0)};
+	std::vector<glm::vec3> toreOffset = {glm::vec3(0.0f,0.0f,0.0f),glm::vec3(2.0,0.0,0.0)};
 	stage.addObject(new GameTorus("tore",programms["minimal"],1,0.25,glm::vec3(1,1,1),toreOffset,"checkerboard.tga"));
+	GameObject *gameObject = new GameObject("objet",programms["minimal"],toreOffset);
+	gameObject->loadOBJ("suzanne.obj");
+	stage.addObject(gameObject);
 //	stage.addObject(new GameTorus("tore",programms["minimal"],2,0.25,glm::vec3(1,1,1),toreOffset,"checkerboard.tga"));
 //	stage.addObject(new GameCube("cube",programms["minimal"],1,glm::vec3(1,1,1),toreOffset,"brick_colormap.tga"));
 

@@ -51,24 +51,18 @@ void GameCube::makeObject() {
 		index->push_back(indexTab[i]);
 
 	for(int i=0;i<24;i+=3) {
-		pos->push_back(vertices[i]);
-		pos->push_back(vertices[i+1]);
-		pos->push_back(vertices[i+2]);
-
-		color->push_back(colorValue[0]);
-		color->push_back(colorValue[1]);
-		color->push_back(colorValue[2]);
+		pos->push_back(glm::vec3(vertices[i],vertices[i+1],vertices[i+2]));
+		color->push_back(glm::vec3(colorValue[0],colorValue[1],colorValue[2]));
 
 	}
 	int j=0;
-	for(int i=0;i<6*12;i++) {
+	for(int i=0;i<6*6;i+=2) {
+
 		if((i%12)==0) j=0;
-		uvs->push_back(uvTab[j]);
-		j++;
+		uvs->push_back(glm::vec2(uvTab[j],uvTab[j+1]));
+		j+=2;
 	}
 
-	for(int i=0;i<uvs->size();i+=2)
-		std::cout << uvs->at(i) <<" "<< uvs->at(i+1) <<" "  <<std::endl; 
 
 	textureID =glGetUniformLocation(programm, "colormap"); 
 
